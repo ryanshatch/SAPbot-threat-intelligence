@@ -5,7 +5,7 @@
 <!-- case-visual:end -->
 
 <!-- doc-nav:start -->
-<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<p><a href="../../README.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
 <!-- doc-nav:end -->
 
 <h1>Central Bank of Iran — OFAC TRON Address Expansion</h1>
@@ -216,7 +216,7 @@
 
 <tr>
   <td>
-    <a href="/TRON/El-Kahira/">
+    <a href="../El-Kahira/README.md">
       <code>TRON/El-Kahira/</code>
     </a>
   </td>

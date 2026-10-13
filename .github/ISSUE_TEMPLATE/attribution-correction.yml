@@ -12,7 +12,7 @@ body:
     attributes:
       label: Case file or repository link
       description: Link the exact case report, wallet index section, file, or line of analysis being disputed.
-      placeholder: https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/...
+      placeholder: https://github.com/ryanshatch/SAPbot-threat-intelligence/...
     validations:
       required: true
 

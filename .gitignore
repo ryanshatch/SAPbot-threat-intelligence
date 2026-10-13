@@ -3,3 +3,28 @@ __pycache__/
 *.sqlite
 *.sqlite3
 .venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*secrets*.json
+
+# Derived exports and temporary files
+*.db
+*.db-journal
+*.sqlite-journal
+*.csv.tmp
+*.csv.bak
+*.log
+.tmp/
+tmp/
+exports/
+dist/
+build/
+.DS_Store

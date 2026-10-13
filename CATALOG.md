@@ -1,36 +1,27 @@
 <!-- doc-nav:start -->
-<p><a href="readme.md">Home</a> · <a href="wallets.md">Wallet index</a></p>
+<p><a href="README.md">Home</a> · <a href="wallets.md">Wallet index</a></p>
 <!-- doc-nav:end -->
 
 # Repository Case and Guide Catalog
 
-This catalog lists every README in the repository. Case records retain their original locations; indexes, historical datasets, and utility guides are labeled separately.
+This catalog lists the published case and guide READMEs in this repository. It reflects the files present in this public research snapshot. Case records retain their original locations; indexes, historical datasets, and utility guides are labeled separately.
 
 <!-- contents:start -->
 <details>
 <summary>Contents</summary>
 <ul>
-<li><a href="#section-1vpns">1VPNS</a></li>
 <li><a href="#section-evm">EVM</a></li>
 <li><a href="#section-ftx">FTX</a></li>
-<li><a href="#section-hbar">HBAR</a></li>
 <li><a href="#section-lazarus">Lazarus</a></li>
 <li><a href="#section-multi-chain">Multi-Chain</a></li>
 <li><a href="#section-sol">SOL</a></li>
 <li><a href="#section-tron">TRON</a></li>
-<li><a href="#section-parsing">parsing</a></li>
 <li><a href="#section-home">Home</a></li>
 <li><a href="#section-updating-navigation">Updating Navigation</a></li>
 </ul>
 </details>
 <!-- contents:end -->
 
-<a id="section-1vpns"></a>
-## 1VPNS
-
-| Document | Location |
-|---|---|
-| [1VPNS / First VPN Service — OFAC Designation](./1VPNS/README.md) | `1VPNS/` |
 <a id="section-evm"></a>
 ## EVM
 
@@ -55,12 +46,9 @@ This catalog lists every README in the repository. Case records retain their ori
 | Document | Location |
 |---|---|
 | [FTX / Alameda Historical Wallet Snapshot](./FTX/readme.md) | `FTX/` |
-<a id="section-hbar"></a>
-## HBAR
 
 | Document | Location |
 |---|---|
-| [HBAR Threat Actors and Wallets](./HBAR/readme.md) | `HBAR/` |
 <a id="section-lazarus"></a>
 ## Lazarus
 
@@ -124,21 +112,14 @@ This catalog lists every README in the repository. Case records retain their ori
 | [Tren de Aragua ATM Jackpotting — OFAC TRON Disclosure](./TRON/Tren-de-Aragua-ATM/README.md) | `TRON/Tren-de-Aragua-ATM/` |
 | [TRON Threat and Sanctions Index](./TRON/README.md) | `TRON/` |
 | [Xinbi Guarantee — OFAC TRON Wallet Disclosure](./TRON/Xinbi-Guarantee/README.md) | `TRON/Xinbi-Guarantee/` |
-<a id="section-parsing"></a>
-## parsing
-
-| Document | Location |
-|---|---|
-| [Parsing from solscan](./parsing/readme.md) | `parsing/` |
-| [Historical Solana Transaction Exports](./parsing/sol%20tx%20history/readme.md) | `parsing/sol tx history/` |
 <a id="section-home"></a>
 ## Home
 
 | Document | Location |
 |---|---|
-| [Blockchain Analysis on Threat Actors](./readme.md) | `./` |
+| [SAPbot — Security Analysis Platform](./README.md) | `./` |
 
 <a id="section-updating-navigation"></a>
 ## Updating Navigation
 
-Run `python scripts/check_docs.py` to check local links, explicit contents anchors, image references, and HTML table structure. After changing section titles, run `python scripts/check_docs.py --write-nav` to refresh the README contents menus and return links. Add new READMEs to this catalog and `assets/visuals.json`. External source availability is outside this local check.
+Run `python scripts/check_research.py` to check local links, CSVs, JSON, and visual references. Add each published case README here and keep `assets/visuals.json` aligned with the files present. External source availability requires separate review.
