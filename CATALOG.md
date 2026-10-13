@@ -10,6 +10,7 @@ This catalog lists the published case and guide READMEs in this repository. It r
 <details>
 <summary>Contents</summary>
 <ul>
+<li><a href="#section-1vpns">1VPNS</a></li>
 <li><a href="#section-evm">EVM</a></li>
 <li><a href="#section-ftx">FTX</a></li>
 <li><a href="#section-lazarus">Lazarus</a></li>
@@ -21,6 +22,13 @@ This catalog lists the published case and guide READMEs in this repository. It r
 </ul>
 </details>
 <!-- contents:end -->
+
+<a id="section-1vpns"></a>
+## 1VPNS
+
+| Document | Location |
+|---|---|
+| [1VPNS / First VPN Service — OFAC Designation](./1VPNS/README.md) | `1VPNS/` |
 
 <a id="section-evm"></a>
 ## EVM

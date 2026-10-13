@@ -70,7 +70,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>1VPNS</code> (historical reference; case file not published here)</td>
+      <td><a href="../1VPNS/README.md"><code>1VPNS/</code></a></td>
       <td>Two Dmytro Rashevskyi identifiers and one First VPN Service identifier</td>
       <td>Official OFAC cyber-related sanctions attribution spanning BTC, ETH, SOL, LTC, ZEC, DASH, TRON, and DOGE</td>
     </tr>
