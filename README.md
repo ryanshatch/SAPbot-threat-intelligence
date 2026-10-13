@@ -20,10 +20,10 @@
   <a href="#section-repository-structure">
     <img src="https://img.shields.io/badge/Browse%20Cases-black?style=for-the-badge&amp;logo=gitbook&amp;logoColor=007EC6" alt="Browse case files">
   </a>
-  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=new-intelligence.yml">
+  <a href="https://github.com/ryanshatch/SAPbot-threat-intelligence/issues/new?template=new-intelligence.yml">
     <img src="https://img.shields.io/badge/Submit%20Report-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Submit threat intelligence">
   </a>
-  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues/new?template=attribution-correction.yml">
+  <a href="https://github.com/ryanshatch/SAPbot-threat-intelligence/issues/new?template=attribution-correction.yml">
     <img src="https://img.shields.io/badge/Request%20Correction-black?style=for-the-badge&amp;logo=github&amp;logoColor=007EC6" alt="Request an attribution correction">
   </a>
   <br>
@@ -47,11 +47,11 @@
 <hr>
 
 <div align="center">
-  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/commits/main">
-    <img src="https://img.shields.io/github/last-commit/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;label=REPO%20UPDATED&amp;color=007EC6" alt="Repository last updated">
+  <a href="https://github.com/ryanshatch/SAPbot-threat-intelligence/commits/main">
+    <img src="https://img.shields.io/github/last-commit/ryanshatch/SAPbot-threat-intelligence?style=flat-square&amp;label=REPO%20UPDATED&amp;color=007EC6" alt="Repository last updated">
   </a>
-  <a href="https://github.com/ryanshatch/blockchain-analysis-on-threat-actors/issues">
-    <img src="https://img.shields.io/github/issues/ryanshatch/blockchain-analysis-on-threat-actors?style=flat-square&amp;color=007EC6" alt="Open issues">
+  <a href="https://github.com/ryanshatch/SAPbot-threat-intelligence/issues">
+    <img src="https://img.shields.io/github/issues/ryanshatch/SAPbot-threat-intelligence?style=flat-square&amp;color=007EC6" alt="Open issues">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/(c)%20All%20Rights%20Reserved%20by%20Ryanshatch-555555?style=flat-square" alt="All rights reserved">
