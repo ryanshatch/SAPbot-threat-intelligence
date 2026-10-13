@@ -5,7 +5,7 @@
 <!-- case-visual:end -->
 
 <!-- doc-nav:start -->
-<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<p><a href="../README.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
 <!-- doc-nav:end -->
 
 # Ethereum and EVM Case Index

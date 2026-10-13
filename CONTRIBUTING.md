@@ -1,15 +1,7 @@
 # Contributing evidence
 
-Open an issue using the existing intelligence or attribution-correction template before a large case addition. Include primary or reproducible sources, full network-specific identifiers, dates with their exact meaning, observed transaction IDs where available, and the uncertainty in actor control. Do not upload stolen data, keys, personal doxxing, malware binaries, or live phishing links that facilitate harm.
+Use the [intelligence issue form](https://github.com/ryanshatch/SAPbot-threat-intelligence/issues/new?template=new-intelligence.yml) for new reports or the [correction form](https://github.com/ryanshatch/SAPbot-threat-intelligence/issues/new?template=attribution-correction.yml) for disputed records. Include a public primary source or reproducible transaction evidence, full network-specific identifiers, the meaning of each date, and uncertainty about control. Do not submit credentials, seed phrases, private personal data, or malware binaries.
 
-For a dedicated case, update its README and `addresses.csv` together. The CSV role should distinguish direct attacker control, exploit proceeds, malicious infrastructure, victim/recovery assets, service hops and unconfirmed counterparties. Use `threat_label=false` for addresses that must not inherit an attacker label. Do not infer a named actor, a loss amount, a transaction date, or a common controller from mere contact with a suspicious wallet. Preserve historical corrections and state what changed.
+For a dedicated case, update its README and relevant CSV together. Distinguish direct actor control, proceeds, malicious infrastructure, victims, recovery, exchange custody, service hops, and unconfirmed counterparties. Use an explicit false threat label where the schema supports one and the indicator must not inherit an actor label. Do not infer a named actor, loss amount, transaction date, or shared controller merely from contact with a suspicious address.
 
-Before proposing a change, run:
-
-```sh
-python -m threatintel validate
-python -m unittest discover -s tests -v
-python scripts/check_docs.py
-```
-
-The validator currently skips older CSV schemas, reporting each file. If you change one of those cases, review it manually and add an adapter or schema mapping rather than forcing fields into a misleading form. The [data model](docs/data-model.md) describes the generated index and current guardrails. Repository content is subject to its existing [license](LICENSE); discuss substantial contribution or reuse permissions with the maintainer.
+Before proposing a change, run `python scripts/check_research.py` from the repository root. The check covers local links, JSON, CSV shape, and basic attribution guardrails; a reviewer must still verify cited sources and chain-specific claims. See the [data format](docs/data-model.md), [case catalog](CATALOG.md), and [license](LICENSE). New cases from the private workspace require separate publication review.

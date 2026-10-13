@@ -5,7 +5,7 @@
 <!-- case-visual:end -->
 
 <!-- doc-nav:start -->
-<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<p><a href="../README.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
 <!-- doc-nav:end -->
 
 <div align="center">
@@ -70,7 +70,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="../1VPNS/"><code>1VPNS/</code></a></td>
+      <td><code>1VPNS</code> (historical reference; case file not published here)</td>
       <td>Two Dmytro Rashevskyi identifiers and one First VPN Service identifier</td>
       <td>Official OFAC cyber-related sanctions attribution spanning BTC, ETH, SOL, LTC, ZEC, DASH, TRON, and DOGE</td>
     </tr>

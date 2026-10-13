@@ -1,5 +1,5 @@
 <!-- doc-nav:start -->
-<p><a href="readme.md">Home</a> · <a href="CATALOG.md">All case files</a></p>
+<p><a href="README.md">Home</a> · <a href="CATALOG.md">All case files</a></p>
 <!-- doc-nav:end -->
 
 # Crypto Wallet Analysis
@@ -356,7 +356,7 @@ The reviewed on-chain analysis supports malicious authorization abuse rather tha
 **Networks:** Bitcoin, Ethereum, Solana, Litecoin, Zcash, Dash, TRON, Dogecoin  
 **Source type:** Official OFAC SDN List update  
 **Confidence:** High  
-**Case file:** [`1VPNS/`](./1VPNS/)
+**Case file:** Not published in this repository. Verify these historical indicators against the current official designation before use.
 
 ### BTC / ETH / SOL Direct Sanctions-Watch Seeds
 
