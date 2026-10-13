@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="Conceptual blockchain investigation illustration; not transaction evidence" src="./assets/blockchain-investigation-hero.jpg" width="1200">
-  <h1>SAPbot — Security Analysis Platform</h1>
+  <h1>SAPbot - Security Analysis Platform</h1>
   <p><strong>Public blockchain threat intelligence research</strong><br>Originally published as <em>Blockchain Analysis on Threat Actors</em>.</p>
   <p><a href="https://sapbot.org">SAPbot.org</a> · <a href="./CATALOG.md">Case catalog</a> · <a href="./wallets.md">Wallet index</a> · <a href="./CONTRIBUTING.md">Contribute or request a correction</a></p>
 </div>
