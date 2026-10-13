@@ -1,0 +1,241 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../assets/readme-headers/sol.svg" alt="Solana investigations — Protocol incidents, key theft and wallet-threat campaigns" width="1200">
+</p>
+<!-- case-visual:end -->
+
+<!-- doc-nav:start -->
+<p><a href="../readme.md">Home</a> · <a href="../wallets.md">Wallet index</a> · <a href="../CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
+<div align="center">
+<h1>Solana Threat and Incident Index</h1>
+<p><strong>Solana-specific exploits, governance attacks, suspicious wallets, authorization drains, rug investigations, sanctions attributions, and Solana-origin multi-chain incidents.</strong></p>
+</div>
+
+<hr>
+
+<p>
+<strong>Recent tracked set:</strong> Twelve individually identifiable Solana-origin security incidents from June 10 through September 30, 2026 are represented in <a href="./INCIDENTS.csv"><code>INCIDENTS.csv</code></a>. This includes key compromises as well as protocol incidents. CYBERLEEK, FomoPeek, multi-victim drainer campaigns, and sanctions attributions are tracked separately from this incident count.
+</p>
+
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-solana-case-directories">Solana Case Directories</a></li>
+<li><a href="#section-solana-origin-cases-stored-under-multi-chain">Solana-Origin Cases Stored Under Multi-Chain</a></li>
+<li><a href="#section-multi-chain-hot-wallet-incidents-affecting-solana">Multi-Chain Hot-Wallet Incidents Affecting Solana</a></li>
+<li><a href="#section-related-solana-sanctions-cases">Related Solana Sanctions Cases</a></li>
+<li><a href="#section-related-solana-targeting-campaigns">Related Solana-Targeting Campaigns</a></li>
+<li><a href="#section-classification-rule">Classification Rule</a></li>
+<li><a href="#section-monitoring-boundaries">Monitoring Boundaries</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-solana-case-directories"></a>
+<h2>Solana Case Directories</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Case</th><th align="left">Incident date</th><th align="left">Classification</th><th align="left">Reported impact</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="./Raydium/"><code>Raydium/</code></a></td>
+      <td>June 10, 2026</td>
+      <td>Counterfeit LP mint accepted by deprecated AMM V3 withdrawal logic</td>
+      <td>Approximately $1.34 million</td>
+    </tr>
+    <tr>
+      <td><a href="./BonkDAO/"><code>BonkDAO/</code></a></td>
+      <td>July 6, 2026</td>
+      <td>Malicious governance proposal and treasury takeover</td>
+      <td>Approximately 4.426 trillion BONK, valued near $19.3–20 million</td>
+    </tr>
+    <tr>
+      <td><a href="./Genesis-Whale-Drain/"><code>Genesis-Whale-Drain/</code></a></td>
+      <td>July 10–13, 2026</td>
+      <td>Suspected private-wallet compromise / high-value drain; compromise vector unknown</td>
+      <td>Approximately 180,900 SOL, valued near $14.2 million</td>
+    </tr>
+    <tr>
+      <td><a href="./SUNUSI/"><code>SUNUSI/</code></a></td>
+      <td>July 13, 2026</td>
+      <td>Malicious burn-tool authorization and Permanent Delegate abuse</td>
+      <td>More than $275,000 nominal SUNUSI value removed; approximately $94,300 reportedly realized through selling</td>
+    </tr>
+    <tr>
+      <td><a href="./DeFiTuna/"><code>DeFiTuna/</code></a></td>
+      <td>July 16, 2026</td>
+      <td>Leveraged-position health-check and solvency-validation exploit</td>
+      <td>Approximately 569,601 USDC</td>
+    </tr>
+    <tr>
+      <td><a href="./FlashTrade/"><code>FlashTrade/</code></a></td>
+      <td>July 21–22, 2026</td>
+      <td>Forged ephemeral buffer / missing canonical PDA validation</td>
+      <td>98,000 USDC; amount covered by FlashTrade and MagicBlock</td>
+    </tr>
+    <tr>
+      <td><a href="./CYBERLEEK/"><code>CYBERLEEK/</code></a></td>
+      <td>August 18, 2026–ongoing</td>
+      <td>Active IP-disclosure and monetization campaign with a pre-positioned Solana event token; August 27 creator-fee cash-out and suspected insider-exit activity</td>
+      <td>No Solana protocol loss; approximately $270,000 aggregate operator-linked cash-out proceeds reported</td>
+    </tr>
+    <tr>
+      <td><a href="./Rain-Legacy-Contracts/"><code>Rain-Legacy-Contracts/</code></a></td>
+      <td>August 28, 2026</td>
+      <td>Shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit affecting Rain legacy Solana card contracts used by Avici, Tria, and Solayer Pay</td>
+      <td>2,321 users and $932,804.22 reconciled for Avici plus Tria; approximately $1.1M fleet-wide cash-out; Solayer Pay impact not separately quantified</td>
+    </tr>
+    <tr>
+      <td><a href="./Aquifer/"><code>Aquifer/</code></a></td>
+      <td>August 31, 2026</td>
+      <td>Forged token-account and untrusted token-program validation exploit with cross-chain proceeds consolidation</td>
+      <td>$2,469,729 across 212 malicious swaps; one Solana attacker wallet, one malicious program, and one Ethereum proceeds wallet retained as P1 indicators</td>
+    </tr>
+    <tr>
+      <td><a href="./Dominion-SILV/"><code>Dominion-SILV/</code></a></td>
+      <td>September 11, 2026</td>
+      <td>Multisig and standalone-key compromise; treasury theft, liquidation, and Chainflip proceeds tracing</td>
+      <td>Approximately 46,909 SILV; $2.98–3.0M pre-attack nominal value and approximately $238,000 realized proceeds; operations ended October 7</td>
+    </tr>
+    <tr>
+      <td><a href="./TradeWiz/"><code>TradeWiz/</code></a></td>
+      <td>September 28–30, 2026</td>
+      <td>SOL PVP private-key exposure and automated customer-wallet sweep</td>
+      <td>20,933 wallets affected; approximately $459,468 total reconstructed loss; three direct seeds and one ownership-uncertain forwarder</td>
+    </tr>
+    <tr>
+      <td><a href="./HOPE/"><code>HOPE/</code></a></td>
+      <td>Historical / ongoing investigation</td>
+      <td>Token concentration, transfers, sales, and suspected rug activity</td>
+      <td>See case report</td>
+    </tr>
+  </tbody>
+</table>
+
+<a id="section-solana-origin-cases-stored-under-multi-chain"></a>
+<h2>Solana-Origin Cases Stored Under Multi-Chain</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Case</th><th align="left">Incident date</th><th align="left">Why it is cross-listed</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../Multi-Chain/Across-Protocol/"><code>Multi-Chain/Across-Protocol/</code></a></td>
+      <td>July 17, 2026</td>
+      <td>The exploit originated in forged Solana deposit-event processing, while fraudulent relayer payouts and recovery activity spanned numerous destination chains.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/Allbridge-Core/"><code>Multi-Chain/Allbridge-Core/</code></a></td>
+      <td>July 19, 2026</td>
+      <td>The vulnerable liquidity-pool deployment and exploit transaction were on Solana, while stolen proceeds were routed to Ethereum.</td>
+    </tr>
+  </tbody>
+</table>
+
+<a id="section-multi-chain-hot-wallet-incidents-affecting-solana"></a>
+<h2>Multi-Chain Hot-Wallet Incidents Affecting Solana</h2>
+
+| Case | Incident date | Scope and monitoring |
+|---|---|---|
+| [Duelbits](../Multi-Chain/Duelbits-September-2026/) | September 24, 2026 | Approximately $7M across five networks; roughly $1M Solana component; one P1 Solana attacker/proceeds seed |
+
+The compromise affected Solana alongside four other networks. Its initial compromise location is unestablished, so it is cross-listed here and excluded from the twelve **Solana-origin** incidents in `INCIDENTS.csv`. The [Frogman wallet drain](../Multi-Chain/Frogman-October-2026/) likewise spans three networks; its receiving Solana wallet is a proceeds lead, not evidence of a Solana protocol exploit. The [Bybit laundering case](../Multi-Chain/Bybit-Laundering-October-2026/) contributes three Solana laundering-service seeds and is not a new Solana exploit.
+
+<a id="section-related-solana-sanctions-cases"></a>
+<h2>Related Solana Sanctions Cases</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Case</th><th align="left">Date</th><th align="left">Solana indicator</th><th align="left">Classification</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../Multi-Chain/Shelbit-Network/"><code>Multi-Chain/Shelbit-Network/</code></a></td>
+      <td>August 7, 2026</td>
+      <td><code>6wjqWWra8ombzaw6VHrG5xpQ972jCYF6bbHiFCbWmr4U</code></td>
+      <td>High-confidence OFAC-sanctioned Shelbit Exchange infrastructure seed; watch directly</td>
+    </tr>
+  </tbody>
+</table>
+
+<a id="section-related-solana-targeting-campaigns"></a>
+<h2>Related Solana-Targeting Campaigns</h2>
+
+<table>
+  <thead>
+    <tr><th align="left">Campaign</th><th align="left">Scope</th><th align="left">Classification</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../Multi-Chain/FomoPeek/"><code>Multi-Chain/FomoPeek/</code></a></td>
+      <td>Disclosed September 19, 2026; malicious iOS 1.1 and 1.2 releases; Solana, Ethereum, and TRON users</td>
+      <td>Kernel-exploit-assisted credential theft; one published Ethereum attacker seed and five proceeds pivots; approximately 580,000 USDT attributed. Separate from the disputed FOMO allegation.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/SpaceX-FIFA-Drainers/"><code>Multi-Chain/SpaceX-FIFA-Drainers/</code></a></td>
+      <td>Solana and EVM users; observed May–July 2026</td>
+      <td>Wallet-drainer, malicious dApp, fake-token, impersonation, and investment-scam campaign. Not counted as a single Solana protocol exploit.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/GTA-VI-Wallet-Drainer/"><code>Multi-Chain/GTA-VI-Wallet-Drainer/</code></a></td>
+      <td>Reported September 1, 2026; one hard-coded Solana receiving address and two malicious domains retained</td>
+      <td>Fake GTA VI leaked-copy wallet drainer. Confirmed malicious code; separate from CYBERLEEK and not counted as a Solana protocol exploit.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>FOMO iOS allegations</code></a></td>
+      <td>August 23–24, 2026; one 662 SOL transfer verified; $6M aggregate loss claimed but unverified</td>
+      <td>Disputed wallet-drain allegation / possible client-side compromise. Investigative only; no direct threat-wallet seed.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>Fake Seeker / SKR and $WAR rewards</code></a></td>
+      <td>Reported August 20–22, 2026; one fake SKR URL retained</td>
+      <td>Wallet-drainer phishing and brand impersonation. Not a Solana, Seeker, SKR, or legitimate-token vulnerability.</td>
+    </tr>
+    <tr>
+      <td><a href="../Multi-Chain/August-2026-Security-Sweep/"><code>Kylie Jenner / $KYLIE promotion</code></a></td>
+      <td>August 24, 2026; contextual Solana token mint retained</td>
+      <td>Reported social-account compromise and malicious-token promotion; not yet a confirmed rug or attributed wallet cluster.</td>
+    </tr>
+  </tbody>
+</table>
+
+<a id="section-classification-rule"></a>
+<h2>Classification Rule</h2>
+
+<p>
+Cases are indexed here when the vulnerable program, governance system, execution environment, victim wallet, authorization path, sanctioned identifier, campaign-financing infrastructure, or initial exploit transaction was on Solana. Active campaigns may be included when Solana is central to the operation even without a protocol exploit; those campaigns remain outside the protocol-incident count. A case may remain canonically stored under <code>Multi-Chain/</code> when its protocol scope, sanctions attribution, fraudulent payouts, bridge movement, proceeds tracing, recovery activity, or campaign infrastructure spans several networks.
+</p>
+
+<p>
+The exploit-origin chain and the later proceeds chains are recorded separately. Bridging stolen funds to Ethereum does not reclassify the original vulnerability or wallet drain as an Ethereum incident. Sanctions cases remain distinct from exploit counts.
+</p>
+
+<a id="section-monitoring-boundaries"></a>
+<h2>Monitoring Boundaries</h2>
+
+<ul>
+  <li>Direct-watch attacker, proceeds, and officially sanctioned addresses are separated from victim, protocol, bridge, exchange, router, vault, recovery, and transactional-counterparty infrastructure.</li>
+  <li>Incomplete or truncated addresses are not added as monitoring seeds.</li>
+  <li>Dominion's three directly attributed Solana wallets, inserted signer, and Ethereum proceeds destinations retain separate custody and control roles. The secondary Ethereum destination may be a service; stolen Dominion signer wallets and the SILV mint are victim context.</li>
+  <li>FomoPeek is a malicious-application campaign with approximately 580,000 USDT in attributed proceeds and six published Ethereum indicators as of the September 24 update; it is not a Solana protocol vulnerability and supplies no new Solana wallet seed.</li>
+  <li>The Shelbit Solana identifier is an official sanctions seed and should be watched directly; connected wallets do not automatically inherit the Shelbit or IRGC label.</li>
+  <li>For CYBERLEEK, only the creator / pool-creator address is labeled as a direct actor-linked wallet. August 27 reporting establishes a material creator-fee cash-out, but the mint, token accounts, pools, Fee Key NFT, funding relays, external traders, and copycat mints retain narrower infrastructure or exclusion labels.</li>
+  <li>The four fresh wallets used in the August 27 CYBERLEEK dispersal are not promoted to direct seeds because complete addresses were not published in the reviewed reporting.</li>
+  <li>The Genesis-era whale case includes the complete victim and theft-linked addresses published by ZachXBT, but the compromise vector remains unknown.</li>
+  <li>SUNUSI is classified as malicious authorization and Permanent Delegate abuse, not as a confirmed rug pull or private-key compromise.</li>
+  <li>FlashTrade currently has no machine-readable attacker-address file because no complete public attacker address was resolved in the reviewed evidence.</li>
+  <li>The SpaceX/FIFA drainer wave is tracked as a campaign because its domains, tokens, receiving addresses, and operator infrastructure rotate rapidly.</li>
+  <li>FOMO remains a disputed wallet-drain allegation; the verified 662 SOL transfer does not establish app causation and adds no direct threat-wallet seed.</li>
+  <li>The fake Seeker / SKR URL and the <code>$KYLIE</code> mint are retained as non-wallet investigative IOCs. Fake <code>$WAR</code> pages remain campaign intelligence without a complete retained IOC.</li>
+  <li>The Rain case retains two upstream Ethereum funding seeds, two Solana P1 seeds, and one Ethereum laundering/proceeds pivot. Funding linkage is high confidence, but common ownership with the Solana exploiter remains unresolved. Avici, Tria, and Solayer Pay are confirmed affected programs; Solayer Pay's separate loss is undisclosed. Rain contracts, collateral accounts, DEXs, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain infrastructure or victim context.</li>
+  <li>The fake GTA VI drainer address is a high-confidence campaign seed. Shared branding does not connect it to CYBERLEEK, and the two malicious domains remain non-wallet IOCs.</li>
+  <li>The Aquifer case retains one Solana attacker wallet, one malicious Solana program, and one Ethereum proceeds wallet as P1 indicators. The Aquifer program, affected vaults, recovery addresses, routers, bridges, settlement wallets, market makers, and ordinary counterparties remain victim, recovery, or service infrastructure.</li>
+  <li>None of the August 24–25 Solana watch items are counted as confirmed Solana protocol exploits or confirmed rug pulls.</li>
+  <li>Cross-chain counterparties are not automatically threat-labeled merely because they interacted with incident proceeds or sanctioned seeds.</li>
+</ul>

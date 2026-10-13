@@ -1,0 +1,1279 @@
+<!-- doc-nav:start -->
+<p><a href="readme.md">Home</a> · <a href="CATALOG.md">All case files</a></p>
+<!-- doc-nav:end -->
+
+# Crypto Wallet Analysis
+
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-overview">Overview</a></li>
+<li><a href="#section-existing-tracking-list">Existing Tracking List</a></li>
+<li><a href="#section-zunami-protocol-exploit-cluster">Zunami Protocol Exploit Cluster</a></li>
+<li><a href="#section-ostium-oracle-manipulation-exploit">Ostium Oracle-Manipulation Exploit</a></li>
+<li><a href="#section-triple-a-treasury-wallet-compromise">Triple-A Treasury-Wallet Compromise</a></li>
+<li><a href="#section-across-protocol-solana-relayer-exploit">Across Protocol Solana Relayer Exploit</a></li>
+<li><a href="#section-verusethereum-bridge-exploit">Verus–Ethereum Bridge Exploit</a></li>
+<li><a href="#section-genesis-era-solana-whale-drain">Genesis-Era Solana Whale Drain</a></li>
+<li><a href="#section-sunusi-permanent-delegate-drain">SUNUSI Permanent-Delegate Drain</a></li>
+<li><a href="#section-dmytro-rashevskyi--first-vpn-service-1vpns">Dmytro Rashevskyi / First VPN Service (1VPNS)</a></li>
+<li><a href="#section-defituna-lending-exploit">DeFiTuna Lending Exploit</a></li>
+<li><a href="#section-central-bank-of-iran--tron-address-expansion">Central Bank of Iran — TRON Address Expansion</a></li>
+<li><a href="#section-el-kahira--zaid-issam-ahmed-al-jebouri">El-Kahira / Zaid Issam Ahmed Al-Jebouri</a></li>
+<li><a href="#section-august-20-september-7-2026-multi-chain-security-sweep">August 20-September 7, 2026 Multi-Chain Security Sweep</a></li>
+<li><a href="#section-august-22-follow-up-bofur-capital-address-poisoning">August 22 Follow-Up: Bofur Capital Address Poisoning</a></li>
+<li><a href="#section-august-24-follow-up-term-finance-vault-governance-exploit">August 24 Follow-Up: Term Finance Vault Governance Exploit</a></li>
+<li><a href="#section-august-25-solana-investigative-watch--no-new-threat-wallet-seeds">August 25 Solana Investigative Watch — No New Threat-Wallet Seeds</a></li>
+<li><a href="#section-rain-legacy-solana-card-contract-exploit">Rain Legacy Solana Card-Contract Exploit</a></li>
+<li><a href="#section-icon-network-migration-contract-replay-exploit">ICON Network Migration-Contract Replay Exploit</a></li>
+<li><a href="#section-aquifer-solana-amm-exploit">Aquifer Solana AMM Exploit</a></li>
+<li><a href="#section-cyberleek--gta-vi-leak-and-token-campaign">CYBERLEEK / GTA VI Leak-and-Token Campaign</a></li>
+<li><a href="#section-fake-gta-vi-leak-wallet-drainer-campaign">Fake GTA VI Leak Wallet-Drainer Campaign</a></li>
+<li><a href="#section-dojfbi-hamas--al-qassam-financing-and-laundering-network">DOJ/FBI Hamas / Al-Qassam Financing and Laundering Network</a></li>
+<li><a href="#section-liquid-network-unauthorized-peg-out">Liquid Network Unauthorized Peg-Out</a></li>
+<li><a href="#section-redsonic--reddio-vault-exploit">RedSonic / Reddio Vault Exploit</a></li>
+<li><a href="#section-suspected-gomining-linked-multi-wallet-drain">Suspected GoMining-Linked Multi-Wallet Drain</a></li>
+<li><a href="#section-dream-health-chain-exploit">Dream Health Chain Exploit</a></li>
+<li><a href="#section-august-24-ofac-alert-iranian-mois-linked-cyber-actor-network">August 24 OFAC Alert: Iranian MOIS-Linked Cyber-Actor Network</a></li>
+<li><a href="#section-nesa--cosmos-evm-exploit">Nesa / Cosmos EVM Exploit</a></li>
+<li><a href="#section-xinbi-guarantee--september-9-ofac-tron-disclosure">Xinbi Guarantee — September 9 OFAC TRON Disclosure</a></li>
+<li><a href="#section-dominion-market--silv--september-11-key-compromise">Dominion Market / SILV — September 11 Key Compromise</a></li>
+<li><a href="#section-safe--rseth--original-exploiter-and-mev-proceeds">Safe / rsETH — Original Exploiter and MEV Proceeds</a></li>
+<li><a href="#section-ref9334--kremlin--operator-and-c2-contracts">REF9334 / KREMLIN — Operator and C2 Contracts</a></li>
+<li><a href="#section-fetchai--nunet--singularitynet--september-1920-cluster">Fetch.ai / NuNet / SingularityNET — September 19–20 Cluster</a></li>
+<li><a href="#section-etherfi-legacy-atomicqueue--resolved-full-address">ether.fi Legacy AtomicQueue — Resolved Full Address</a></li>
+<li><a href="#section-september-campaign-and-coverage-notes">September Campaign and Coverage Notes</a></li>
+<li><a href="#section-fomopeek--september-24-ethereum-attribution">FomoPeek — September 24 Ethereum Attribution</a></li>
+<li><a href="#section-bitget--september-2425-cross-chain-breach">Bitget — September 24–25 Cross-Chain Breach</a></li>
+<li><a href="#section-duelbits--september-24-multi-chain-hot-wallet-compromise">Duelbits — September 24 Multi-Chain Hot-Wallet Compromise</a></li>
+<li><a href="#section-malt-swap-function-exploit">MALT Swap-Function Exploit</a></li>
+<li><a href="#section-flashloopadapter-safe-module-exploit">FlashLoopAdapter Safe-Module Exploit</a></li>
+<li><a href="#section-near-intents--returned-funds-historical-iocs">NEAR Intents — Returned-Funds Historical IoCs</a></li>
+<li><a href="#section-tradewiz-sol-pvp--exposed-customer-keys">TradeWiz SOL PVP — Exposed Customer Keys</a></li>
+<li><a href="#section-frogman--multi-chain-wallet-drain">Frogman — Multi-Chain Wallet Drain</a></li>
+<li><a href="#section-tren-de-aragua--ofac-tron-deposit-identifiers">Tren de Aragua — OFAC TRON Deposit Identifiers</a></li>
+<li><a href="#section-bybit--october-laundering-service-leads">Bybit — October Laundering-Service Leads</a></li>
+<li><a href="#section-maker-legacy-auction-keeper-drain">Maker Legacy Auction Keeper Drain</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-overview"></a>
+## Overview
+
+This document provides a compact index of cryptocurrency wallets retained for ongoing defensive analysis. Detailed evidence, attribution limits, transaction data, and source links belong in each linked case directory.
+
+> Verify every address, network, and attribution before using this index. A listed operational pivot is not automatically a threat-controlled wallet.
+
+<a id="section-existing-tracking-list"></a>
+## Existing Tracking List
+
+1. **Under analysis:** `2GsFJ1JR1j8RAWuUfdJPXdjknq5VmKG9XSfoTZdqQeoR`
+2. **Under analysis:** `0xAAcE3E2dB13C372C74BDaE118f045D49daC8AE18`
+3. **Sam Bankman-Fried / Alameda Research 25:** `0x84D34f4f83a87596Cd3FB6887cFf8F17Bf5A7B83`
+4. **Fz Pamajj — Burner 2:** `3LT9mkc7yQTofJVa3MSeEFg15Wehk4y7ZWwmfmUu7qvx`
+5. **Fz Pamajj — Burner 1:** `41tCXQbqaTDfkYzEPRQzkL1d8kVck7GgCXQsMcT7bnUk`
+6. **Fz Pamajj — Main:** `HSRjRJmTu9UVugqNea2X2WVFnb329SywgBGipJhMLKU5`
+7. **Alex Becker — Main:** `0xaE4D837cAA0C53579f8a156633355Df5058B02f3`
+8. **Alex Becker — USDC Cash Out:** `0x907b322d33121a50a9f7bc5305761b0ca40c6113`
+9. **Alex Becker — Sidus/Senate:** `0x5E6119CC5881598eA9F10521BAE21EF8AAF612d3`
+10. **Alex Becker — Dalarnia:** `0x128f0081Fdcb8b902fF0f45Ae90bBE93d87dF47b`
+11. **Kmoney / kmoney.sol:** `7byBtWp7uW8eYNs1N4uDesGf5hw8gkCdbPUWi6ckyUNX`
+12. **Dusting-attack wallet:** `777vxoS8tWgLEgr6yMp5scadhnWxkksRKDMQFBJKD24N`
+13. **0xfxnction / kingofsolanabeach.sol:** `6SFShytsPZ61KuauRbBppAcs6WwuNXmEHpFxBUp68EKP`
+14. **Hacked Facebook account / Faith Spires:** `bc1q9etmuux673pkrtqsh6m3fratuqxw22nc70s2gu`
+15. **Hacked Facebook account / Faith Spires:** `3B8PAG1ynzghVixBNDfGAijfWthob8sgQo`
+16. **Hacked Facebook account / Hollie Harvell:** `35jFVWx6fNUV8QA5vsVtw6iXE5XpBDFJet`
+17. **Luwizop / Panic Station Pythons:** `3YaGKXSuxwfvKiJ83V92hKRvh23w1RdYgrwY7C5CSNG6`
+
+---
+
+<a id="section-zunami-protocol-exploit-cluster"></a>
+## Zunami Protocol Exploit Cluster
+
+**Network:** Ethereum  
+**Confidence:** Medium  
+**Case file:** [`EVM/Ethereum/Zunami-Protocol/`](./EVM/Ethereum/Zunami-Protocol/)
+
+### Direct Threat Seeds
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `0x5f4C21c9Bb73c8B4a296cC256C0cDe324dB146DF` | 2023 attacker EOA / exploit seed | Watch directly |
+| `0x051370419b871F7C05dEE8f7134401530832e250` | 2025 attacker EOA / privileged-access drain | Watch directly |
+| `0xF00d0e11AcCe1eA37658f428d947C3FFFAeaDe70` | Pre-exploit staging and operational wallet | Watch directly |
+| `0x12e98c4EBD742ca9465789570e5cf4Df9EEd0Fb0` | Accumulation and cash-out wallet | Watch directly |
+
+### Operational Pivots — Not Automatically Threat-Labeled
+
+| Address | Classification | Handling |
+|---|---|---|
+| `0xe9b2B067eE106A6E518fB0552F3296d22b82b32B` | Zunami deployer / privileged wallet | Graph-expansion pivot only |
+| `0xF9605D8c4c987d7Cb32D0d11FbCb8EeeB1B22D5d` | `sterx.eth`, operationally linked to deployer | Graph-expansion pivot; inferential attribution |
+
+---
+
+<a id="section-ostium-oracle-manipulation-exploit"></a>
+## Ostium Oracle-Manipulation Exploit
+
+**Network:** Arbitrum One  
+**Chain ID:** `42161`  
+**Wallet confidence:** High  
+**Case file:** [`EVM/Arbitrum/Ostium/`](./EVM/Arbitrum/Ostium/)
+
+### Direct Threat Seeds
+
+| Address | Classification | Priority |
+|---|---|---|
+| `0x321Df194646029e7A6193Ea05573d4B9c398bfD9` | Primary payout and consolidation wallet / Ostium Exploiter 1 | Highest-priority direct watch |
+| `0xD1794196f0fc99c7f27970e661597d77d9a85869` | Exploit execution and transaction-origin wallet / Ostium Exploiter 2 | Direct watch |
+
+### Infrastructure Pivot — Not an Attacker EOA
+
+| Address | Classification | Handling |
+|---|---|---|
+| `0xfE12F6360000dE49D5506d52eE5aC4bC9Dd5bd2E` | Exploit entry contract | Control-path and graph-expansion pivot only |
+
+---
+
+<a id="section-triple-a-treasury-wallet-compromise"></a>
+<h2>Triple-A Treasury-Wallet Compromise</h2>
+
+<p>
+  <strong>Incident window:</strong> July 24–25, 2026<br>
+  <strong>Primary network:</strong> Ethereum<br>
+  <strong>Incident confidence:</strong> High<br>
+  <strong>Address-linkage confidence:</strong> High<br>
+  <strong>Direct-control confidence:</strong> Medium to high<br>
+  <strong>Named actor:</strong> None identified<br>
+  <strong>Case file:</strong>
+  <a href="./Multi-Chain/Triple-A/">
+    Multi-Chain/Triple-A
+  </a>
+</p>
+
+<h3>Direct-Watch Address</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Address</th>
+      <th align="left">Classification</th>
+      <th align="left">Monitoring</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://etherscan.io/address/0x01F83B5d4fb30E8AA3daC1681B4048D9135253b1">
+          <code>0x01F83B5d4fb30E8AA3daC1681B4048D9135253b1</code>
+        </a>
+      </td>
+      <td>
+        Primary stolen-fund consolidation and holding address
+      </td>
+      <td>
+        Highest-priority direct monitoring and graph expansion
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  The address received approximately 5,287.08568411 ETH across 12 inbound
+  transfers on July 24–25, 2026. Triple-A confirmed unauthorized access
+  to its treasury wallets but did not formally publish or attribute this
+  address.
+</p>
+
+<h3>Related Indicators Under Review</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Network</th>
+      <th align="left">Address</th>
+      <th align="left">Handling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EVM network unresolved</td>
+      <td><code>0x8335D258438E47Cd8EB1532C04Cfe445E011aEf6</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>Solana</td>
+      <td><code>EdtthafhQA23if9PcZvBLhKb9uJM7M6TeyNXozDDon3K</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>TRON</td>
+      <td><code>TRSr81kTZAL2zMoWBsjE4QBc9B4v8WpSkw</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>TRON</td>
+      <td><code>TNLLM9z6b1TtpcXXaAg4Gb9dFyG11x187a</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+    <tr>
+      <td>EVM network unresolved</td>
+      <td><code>0x6caC9dB6A61bC4bEA37086DD6DaA6eCa35Dbc1d7</code></td>
+      <td>Graph-expansion pivot; do not automatically threat-label</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  The five related addresses were disclosed in connection with the
+  incident, but their exact roles have not been sufficiently established.
+  They may represent attacker wallets, compromised Triple-A source
+  wallets, or intermediate routing addresses.
+</p>
+
+---
+
+<a id="section-across-protocol-solana-relayer-exploit"></a>
+## Across Protocol Solana Relayer Exploit
+
+**Incident date:** July 17, 2026  
+**Origin network:** Solana  
+**Destination scope:** 18 reported chains  
+**Incident confidence:** High  
+**Address-linkage confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`Multi-Chain/Across-Protocol/`](./Multi-Chain/Across-Protocol/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `8bkoZToaTBBtAPczgHqD4XVxWtvBkiy4crtexEtYDYSL` | Incident-linked Solana investigation and orchestration seed | Watch directly and expand through source transactions and program calls |
+| EVM role under review | `0xa0C0e9f307b5A26cA3FB5891c19154fc7A02BeF7` | Incident-linked EVM investigation seed | Watch directly and review destination fills and proceeds flows |
+| EVM role under review | `0xA6fb971F3B7a9b9F76EdA76bc89268fe26560189` | Incident-linked EVM investigation seed | Watch directly and review destination fills and proceeds flows |
+
+### Recovery and Protocol Infrastructure — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Ethereum | `0xB524735356985D2f267FA010D681f061DfF03715` | Across Protocol Hub Pool Owner multisig and reported recovery destination | Preserve as protocol infrastructure and recovery evidence only |
+
+The attack exploited off-chain event-reading software rather than directly draining an Across smart contract. The parser accepted forged Solana deposit event representations and caused the Risk Labs relayer to advance its own destination-chain funds.
+
+The three published investigation addresses are suitable for direct incident monitoring. No named attacker attribution has been established, and connected protocol, bridge, exchange, token, router, or counterparty addresses should not be automatically threat-labeled.
+
+---
+
+<a id="section-verusethereum-bridge-exploit"></a>
+## Verus–Ethereum Bridge Exploit
+
+**Incident date:** July 23, 2026  
+**Networks:** Verus and Ethereum  
+**Incident confidence:** High  
+**Address-linkage confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`Multi-Chain/Verus-Ethereum-Bridge/`](./Multi-Chain/Verus-Ethereum-Bridge/)
+
+### Direct Threat-Wallet Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Ethereum | `0xBda71b58cEc0b1C20A8f87cCD52FA0679747855c` | Exploit execution and malicious proof-relay wallet | Watch directly |
+| Ethereum | `0xCFd0A20703cD11E0b9f665e1C3F1Ef989C142D54` | Profit, consolidation, swap, and laundering wallet | Highest-priority direct watch |
+| Verus | `RXo2PqXjgRVJ8w8QVDErVqVLavz4TToyuu` | Source-chain export and cross-chain exploit seed | Watch directly |
+
+### Victim, Technical, and Laundering Infrastructure
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Ethereum | `0x71518580f36FeCEFfE0721F06bA4703218cD7F63` | Compromised Verus–Ethereum Bridge | Victim infrastructure; graph-expansion only |
+| Ethereum | `0x54e03a1682fd0bb065b669f6296f97028dcfd4ce` | VerusProof contract | Technical pivot only; not attacker-controlled |
+| Ethereum | `0xd90e2f925DA726b50C4Ed8D0Fb90Ad053324F31b` | Tornado Cash router | Laundering-path infrastructure; do not label as attacker |
+
+The July attack used the same bridge contract, entry path, and general vulnerability class reported in the May 2026 incident, but public reporting described a different attacker and new wallet set.
+
+Do not merge the May and July wallet clusters without independent evidence of shared funding, control, infrastructure, or laundering activity.
+
+---
+
+<a id="section-genesis-era-solana-whale-drain"></a>
+## Genesis-Era Solana Whale Drain
+
+**Incident window:** July 10–13, 2026  
+**Origin network:** Solana  
+**Downstream network:** Ethereum  
+**Incident confidence:** High for the published flow; medium-high for theft characterization  
+**Compromise vector:** Unknown  
+**Named actor:** None identified  
+**Case file:** [`SOL/Genesis-Whale-Drain/`](./SOL/Genesis-Whale-Drain/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `Ffd1oB2aYM5UzMYUM7TmxULDRQb6KzgrBwmgj9U1C2bE` | Theft-linked address published by ZachXBT | Watch directly and expand victim transfers, swaps, consolidation, and bridge preparation |
+| Solana | `653pnn5fzF51FfotBwxua55Es4QXxTdaXJLbPczVmswp` | Theft-linked address published by ZachXBT | Watch directly and expand Solana-side graph and bridge activity |
+| Ethereum | `0xaa5cfa4e96dda0f9aa30f4dc948b542a9b5817c6` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+| Ethereum | `0x536b4ee7507c41143e1b0bd1bf3f2b84be404836` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+| Ethereum | `0xbf11bdfbeb9ed137c352c81e45d191cacae6b0cf` | Theft-linked address published by ZachXBT | Watch directly for downstream proceeds activity |
+
+### Victim Address — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Solana | `HwtbQBNnLERakdUDuCCLWmUs2oETLFQZeHUWeQdPads` | Genesis-era victim wallet | Preserve for source-flow reconstruction; do not classify as attacker-controlled |
+
+No public evidence currently establishes how the victim wallet was compromised. Do not describe this as a Solana protocol exploit or assert a stolen key, seed phrase, compromised hardware wallet, or malicious signer without additional evidence.
+
+---
+
+<a id="section-sunusi-permanent-delegate-drain"></a>
+## SUNUSI Permanent-Delegate Drain
+
+**Incident date:** July 13, 2026  
+**Network:** Solana  
+**Incident confidence:** Medium-high  
+**Named actor:** None identified  
+**Case file:** [`SOL/SUNUSI/`](./SOL/SUNUSI/)
+
+### Direct Incident-Watch Seeds
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `BUrnPq1dRv7gxjdh5MM2mF51GYBkfLSUyAWx2zcgot6j` | Malicious burn contract / Permanent Delegate authority pivot | Watch directly and expand deployer funding, authority grants, and victim interactions |
+| `Ah4mTqci95qbiydovW8123q2WQzMSCP3MiCzGR2Pje7n` | Attacker / proceeds wallet | Highest-priority direct watch for token sales, SOL consolidation, exchange deposits, and related campaigns |
+
+The reviewed on-chain analysis supports malicious authorization abuse rather than a private-key compromise. SUNUSI is not currently classified as a confirmed rug pull or a Solana protocol exploit.
+
+---
+
+<a id="section-dmytro-rashevskyi--first-vpn-service-1vpns"></a>
+## Dmytro Rashevskyi / First VPN Service (1VPNS)
+
+**Designation date:** July 13, 2026  
+**Networks:** Bitcoin, Ethereum, Solana, Litecoin, Zcash, Dash, TRON, Dogecoin  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`1VPNS/`](./1VPNS/)
+
+### BTC / ETH / SOL Direct Sanctions-Watch Seeds
+
+| Network | Address | Attribution | Monitoring |
+|---|---|---|---|
+| Bitcoin | `1MTndG4K51RRMvkzyvguaHnQpiMLnxFGzM` | Dmytro Rashevskyi | Watch directly |
+| Bitcoin | `1DfyWkiXVVqWfcSduj23qTDis9kb2qvRDa` | Dmytro Rashevskyi | Watch directly |
+| Ethereum | `0x1d19b52b54e7ef5ea1a4b40b616165e798eac9f8` | Dmytro Rashevskyi | Watch directly |
+| Ethereum | `0x2C7DcD774b33e10367F7d6385479e04F97d179dc` | Dmytro Rashevskyi | Watch directly |
+| Solana | `Fc1EwQUZyTEagaDvA1utHXCcZNyG1x2PLt2DfNu1cJdH` | Dmytro Rashevskyi | Watch directly |
+| Solana | `FuCC7GoYwt5TsNTjWL23Xx9UKCvC18chjMEFPL3vJDCC` | Dmytro Rashevskyi | Watch directly |
+| Bitcoin | `bc1qdnr88f4d2yqunnc4mjsguezm6g3mlwe44z5dw8` | First VPN Service / 1VPNS | Watch directly |
+| Bitcoin | `bc1qr4ankqmvmrhce3ydvzse86dfx5s3zhehfr9tg9` | First VPN Service / 1VPNS | Watch directly |
+| Ethereum | `0x2711d73d559f62f4f855ee21f38378f528e07985` | First VPN Service / 1VPNS | Watch directly |
+
+### Cross-Chain High-Confidence Sanctions Seeds
+
+| Network | Address | Attribution | Monitoring |
+|---|---|---|---|
+| Litecoin | `LcP1DumXkNJbBtSYD3XxAfsJ2nZR5hLdpM` | Dmytro Rashevskyi | Watch directly |
+| Litecoin | `LbPAqHvemZBv3pvAqiAtDnZ3U1t6EziaL1` | Dmytro Rashevskyi | Watch directly |
+| Zcash | `t1LHesgnkapziGQCJtrfZWYXhyjfTVo1dvh` | Dmytro Rashevskyi | Watch directly |
+| Dash | `XcuGqRfrR85zyDrzVr1gSL5RNjwwpbu2KS` | Dmytro Rashevskyi | Watch directly |
+| Dash | `XowUeMFa1FkEUnAHL78E5oqpezMfSB6xP1` | Dmytro Rashevskyi | Watch directly |
+| TRON | `TTLRNgLpz5H5tLPuNU4FViUs7zmmAtyvzW` | Dmytro Rashevskyi | Watch directly |
+| TRON | `TBFW9gF4oDX5cG44gS7AoxQeujScmm3z6h` | Dmytro Rashevskyi | Watch directly |
+| Dogecoin | `DHzAVdEoL3PjGeLWNdEJwwMA1CeQ9J9Cpo` | Dmytro Rashevskyi | Watch directly |
+| Dogecoin | `DTqpKQ96rqkTvHcohQQd9BksmgRjasHgGo` | Dmytro Rashevskyi | Watch directly |
+| Litecoin | `ltc1qr8ntsedq8tv0svmxqhzvdcdl5k7kntdmnhwep7` | First VPN Service / 1VPNS | Watch directly |
+| TRON | `TUuaxBAWfA5nmsqNfycxYrzEvz4a5GJMGY` | First VPN Service / 1VPNS | Watch directly |
+
+All listed identifiers are official OFAC digital-currency identifiers. Connected customer wallets, exchanges, hosting providers, routers, or counterparties should initially be treated as graph-expansion pivots unless separately attributed.
+
+---
+
+<a id="section-defituna-lending-exploit"></a>
+## DeFiTuna Lending Exploit
+
+**Incident date:** July 16, 2026  
+**Origin network:** Solana  
+**Downstream network:** Ethereum  
+**Incident confidence:** High  
+**Named actor:** None identified  
+**Case file:** [`SOL/DeFiTuna/`](./SOL/DeFiTuna/)
+
+### Direct Incident-Watch Seeds
+
+| Network | Address | Classification | Monitoring |
+|---|---|---|---|
+| Solana | `9ytGWP8tCRF1keREJ5VHqBpSuM9MZYwm3oFQQa1SvESb` | Attacker 1 / orchestration seed | Watch directly |
+| Solana | `917DKTphW3rhBG5gsJpwKsNGisNV2dx74uUFd8HBEjtg` | Attacker 2 / fake pool | Watch directly; preserve dual role |
+| Solana | `7hiHL8AgDuLNVDQLfN3GHdLAEeCN1F7uz6nSANRvFJst` | Attacker 3 / malicious limit-order owner | Watch directly and trace Mayan bridge activity |
+| Solana | `BK9aTnKfPNnnj45Me5ACrky2vexzUrZHRzr4BjmQpH3c` | Attacker 4 / malicious limit-order owner | Watch directly and trace Mayan bridge activity |
+| Solana | `8P3H7Hy98LWhw5QhuXdoigVdAzPCYRTYjdtQQKhGwvqD` | Attacker 5 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `GrXBhM6Ty6YxubFp8zubtJF12WXmKj1dhMyakRPeaDpo` | Attacker 6 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `F4xUroPaHro4gb2JAqa3e93E7DdZytRQJ4L2cHT5E53p` | Attacker 7 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `ETGhosPrFApbiiKXDpxrhBz7J2MdTA3dxnL2Nkio9vEX` | Attacker 8 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Solana | `4ZKkGZuoXqgSHbmsJXUib3dgn5WNhzbPEXrxuMYJ5oQ3` | Attacker 9 | Direct incident seed; confirm narrower role transaction-by-transaction |
+| Ethereum | `0x509B9D094A6C26D716aaC131E8aDee5B16B86d3e` | Cross-chain proceeds / consolidation wallet | Watch directly for dispersal, exchange deposits, bridge reuse, and privacy interactions |
+
+### Victim and Protocol Infrastructure — Do Not Threat-Label
+
+| Network | Address | Classification | Handling |
+|---|---|---|---|
+| Solana | `tuna4uSQZncNeeiAMKbstuxA9CUkHH6HmC64wgmnogD` | DeFiTuna program | Protocol infrastructure; graph filtering only |
+| Solana | `D76dDcSU5HnAGqVEZCDLyGgLpTp4xZuqeZyVDtUdDv55` | Damaged USDC vault | Victim infrastructure; preserve for loss reconstruction |
+
+CertiK reported that proceeds from the two malicious liquidity-position owners were bridged through Mayan to Ethereum, with 140 ETH deposited into Railgun and 291,696 DAI plus 5 ETH remaining in the published Ethereum wallet as of July 20, 2026.
+
+---
+
+<a id="section-central-bank-of-iran--tron-address-expansion"></a>
+## Central Bank of Iran — TRON Address Expansion
+
+**Material update date:** July 14, 2026  
+**Network:** TRON  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`TRON/Central-Bank-of-Iran/`](./TRON/Central-Bank-of-Iran/)
+
+### Direct Sanctions-Watch Seeds
+
+| Address | Status | Monitoring |
+|---|---|---|
+| `TNiq9AXBp9EjUqhDhrwrfvAA8U3GUQZH81` | Existing OFAC identifier retained | Watch directly |
+| `TTiDLWE6fZK8okMJv6ijg42yrH6W2pjSr9` | Existing OFAC identifier retained | Watch directly |
+| `TAhwhFv3JpK39Nc2m8W5LPCcoTisutiRfp` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TJdgB1k6ot3f2nLuZug6D8eD3HavTmzmSK` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TXGHxdYbGy574z5hBu4LNzq9NzjZQ9bhUf` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+| `TFQbqaNbmq2xsVor2NbufLkYZvxFC9wC7k` | Newly added July 14, 2026 | Watch directly and prioritize historical-flow review |
+
+The July action materially expanded an existing sanctioned-wallet attribution. Transactional proximity to these addresses should not automatically transfer the Central Bank of Iran or OFAC label to counterparties.
+
+---
+
+<a id="section-el-kahira--zaid-issam-ahmed-al-jebouri"></a>
+## El-Kahira / Zaid Issam Ahmed Al-Jebouri
+
+**Designation date:** July 23, 2026  
+**Network:** TRON  
+**Source type:** Official OFAC SDN List update  
+**Confidence:** High  
+**Case file:** [`TRON/El-Kahira/`](./TRON/El-Kahira/)
+
+### Direct Sanctions-Watch Seeds
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `TPyE2oSoaysrXfLzwf9wetBVr9JudLwjtD` | Official OFAC blocked identifier | Watch directly |
+| `TVgUsVzA7mpFExP4zS7HHbtKti6UuBDuwZ` | Official OFAC blocked identifier | Watch directly |
+| `TLoG3vbjDgqmTD5bM7w9rMgA6ysaNReuRy` | Official OFAC blocked identifier | Watch directly |
+| `TAhHpxPRwo1Bmm1A9m51uZ31tcB7EPq7SY` | Official OFAC blocked identifier | Watch directly |
+| `TScXZTbDjjZ6a6jiC7dZjgCqfNo4vm7atV` | Official OFAC blocked identifier | Watch directly |
+| `TGr2i8ZQiiMRjP3mWyQUH2MQBfKu8GJNqm` | Official OFAC blocked identifier | Watch directly |
+| `THJUJFyTnrBWb1ijWav7qfRBrjUuKgP49Z` | Official OFAC blocked identifier | Watch directly |
+
+OFAC directly attributed these TRON identifiers to Zaid Issam Ahmed Al-Jebouri and linked him to El-Kahira for General Trading. Connected exchanges, OTC services, bridges, token contracts, and counterparties should initially remain graph-expansion pivots unless separately attributed.
+---
+
+<a id="section-august-20-september-7-2026-multi-chain-security-sweep"></a>
+## August 20-September 7, 2026 Multi-Chain Security Sweep
+
+**Review cutoff:** August 20, 2026 at 2:31 a.m. ET  
+**Follow-up cutoff:** September 6, 2026
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Machine-readable seeds:** [`addresses.csv`](./Multi-Chain/August-2026-Security-Sweep/addresses.csv)
+
+### Direct Incident-Watch Seeds
+
+| Incident | Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|---|
+| Maya Protocol | MAYAChain | `maya1dl3yrfpedyr5jfr0r86s2apjltnjqgszmwsv8x` | Attacker address | High | P1 direct watch |
+| FoxMarket | BNB Chain | `0x5670d36f00bc7f6860b6afddb288e3668efc0ef9` | Attacker controller | High | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x98b2761559A348968C994D9856dCfc96B6f13C55` | Phishing proceeds recipient | Medium-high attribution | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x93b6B24DC6E6a1D5d72399e3A35498c4DbA1d6D1` | Phishing proceeds recipient | Medium-high attribution | P1 direct watch |
+| Hyperliquid impersonation | Ethereum | `0x6fE314fD4CF845f35fc461eD98e2FB8d9356B566` | Phishing proceeds recipient; appears in other phishing reporting | Medium-high attribution | P1 direct watch; do not assume campaign exclusivity |
+| Ethereum whale drain | Ethereum | `0x8fEB0c6eF08B20bA19C04F951d4408bB5A1F95Ae` | Theft and consolidation address | High | P1 direct watch |
+| Address-poisoning theft | Ethereum | `0xAe7c08afAD91db18666EEAC055D7562c9f4e2c85` | Look-alike poisoning address | High | P2 direct watch |
+
+### Harmony Incident Accounts
+
+The native and hexadecimal strings in each row are alternate representations of one Harmony account. This table contains four accounts, not eight wallets.
+
+| Harmony address | Hex equivalent | Classification | Monitoring |
+|---|---|---|---|
+| `one1uap8dx2z0qsjxqthm5flgcxkeepsz3gsrghnfn` | `0xe7427699427821230177dd13f460d6ce43014510` | Unauthorized-mint incident account | P1 direct watch |
+| `one17u300a40ll5wphd8kj5hktryhdjq3ml9f4phy4` | `0xf722f7f6afffe8e0dda7b4a97b2c64bb6408efe5` | Unauthorized-mint incident account | P1 direct watch |
+| `one1a5hur07z5vtvzhr35zkw8tfqedemkz8t88xgd7` | `0xed2fc1bfc2a316c15c71a0ace3ad20cb73bb08eb` | Unauthorized-mint incident account | P1 direct watch |
+| `one1h56hkxmua0uzfv07fu04cudvtrl35u96pq47vy` | `0xbd357b1b7cebf824b1fe4f1f5c71ac58ff1a70ba` | Unauthorized-mint incident account | P1 direct watch |
+
+### COLDCARD Weak-Entropy Theft — Cross-Chain Watch Set
+
+**Case file:** [`Multi-Chain/Coldcard-Weak-Entropy-Theft/`](./Multi-Chain/Coldcard-Weak-Entropy-Theft/)
+
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Coldcard-Weak-Entropy-Theft/addresses.csv)
+
+| Network | Address | Classification | Confidence | Handling |
+|---|---|---|---|---|
+| Ethereum | `0x160a7A4c067B084F03400c6980Ac29F73F6782f6` | Primary Wave 3 cross-chain proceeds and consolidation destination | High | P1 direct watch |
+| Ethereum | `0x8B5b650067841ff3bF28fF3EC8ED1eE635e3D200` | Secondary September THORChain destination | High linkage; common control unresolved | P2 direct watch |
+| Ethereum | `0x6A08B5B20F23FcFE09f5da506Be59CAD1eC0df06` | Historical August THORChain destination | High linkage; common control unresolved | P2 historical graph pivot |
+| Ethereum | `0x41B7529a411EeA979a8d468bdEBd36b0ad703268` | Earlier BTC-to-ETH bridge and Tornado Cash pivot | High linkage; medium actor clustering | P2 direct watch; not the sole COLDCARD attacker |
+
+| Bitcoin address | Bitquery tier | Snapshot state | Handling |
+|---|---|---|---|
+| `bc1qq85v2c926eg6pgxhwp6q7lf6cnsz80qs3fcu9r` | Confirmed | 562.02147793 BTC; dormant | P1 direct watch |
+| `bc1qx76cae2706qd5q576feh7xq8rfcsjpf2htfhe3` | Confirmed | 398.47576957 BTC; dormant | P1 direct watch |
+| `bc1q8jy96fe5lf8vfugydnte3cguk92gpev7kwtp3q` | Confirmed | 89.62329890 BTC; dormant | P1 direct watch |
+| `bc1qtfrwa4j6rmj9rsgspv6a0yjumkg39js2numu75` | Confirmed | 45.90254994 BTC; dormant | P1 direct watch |
+| `bc1qnk4zh9qcnap2mycp56qjrgza3cc8ylrh8fecp0` | Confirmed | 32.45061090 BTC; prior spends | P1 watch and graph expansion |
+| `bc1qmd5m5ktv7m5ffujxv4248fxv36myvdx79n8jp6` | Confirmed | 0.00002000 BTC; prior spends | P2 historical pivot |
+
+Bitquery traced 20.69 BTC through 36 THORChain swaps. Protocol memos name the Ethereum destinations directly. The primary address received approximately 20.15 BTC of traced value, the secondary address approximately 0.30 BTC, and the historical August address approximately 0.24 BTC. Bitquery's lower `TRACED`, `REPORTED`, `ATTRIBUTED`, `VENUE`, and `UNDER REVIEW` tiers are not promoted to the confirmed set, and common ownership across destinations or theft waves remains unresolved.
+
+Galaxy's September 7 update reports 97.09 BTC moved from Wave 3, approximately 45% of that wave. The newer activity includes 15.48 BTC and 61.12 BTC CoinJoin paths. No complete new CoinJoin address cleared the ingestion threshold, so the machine-readable set is unchanged. Mixed CoinJoin participants and outputs must not inherit the COLDCARD label.
+
+### Explicit Exclusions
+
+| Incident | Indicator | Why excluded from threat seeds |
+|---|---|---|
+| FoxMarket | `0x9fa6d8a13b35e051bfc145918db0111dec13d1a0` | Victim contract |
+| Address poisoning | `0x9B4Ded0ab7754428F7eC0f63a42bAe70D2f51D83` | Victim address |
+| Address poisoning | `0xae7C0ffAB6e77BE2D7d7880a4Ce433F59A4e2c85` | Intended legitimate recipient |
+| ODY | `0x486f…` and `0xd2c85d49b…` | Truncated identifiers; insufficient for machine-readable attribution |
+| Vultisig-related outflow | No complete source address retained | Exploit status and direct attribution remain unresolved |
+
+Fake AMLBot and AML-checker sites are tracked as a high-confidence wallet-drainer TTP without an invented address cluster. Hyperliquid itself was not exploited; that case concerns a fraudulent sponsored result and impersonation site targeting a user.
+
+### August 21 Follow-Up: External-L1 and Coinsbuy Seeds
+
+| Incident | Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|---|
+| Maya Protocol | Bitcoin | `bc1q0hsgwunccczelq05ucpmfz268eyy5jr2y5l646` | Exploit-proceeds consolidation address; approximately 20.83 BTC | High | P1 direct watch |
+| Maya Protocol | Arbitrum | `0xa2f246f82995CBcCA8eD0d9F251383881A5E423e` | Secondary exploit-proceeds address | Medium-high | P2 direct watch |
+| Coinsbuy | Ethereum | `0x4d1bEF2Fe998B3E3C4029EF9EA6A0534d95661d3` | Theft/proceeds address | High incident linkage | P1 direct watch |
+| Coinsbuy | Ethereum | `0x66790b54B891e2ebdef58a15B969Ff6fb4374b17` | Theft/proceeds address | High incident linkage | P1 direct watch |
+| Coinsbuy | TRON | `TVpX9xCzrj6KHeNhhDJoqjzEqFMxdgubGR` | Theft/proceeds address | High incident linkage | P1 direct watch |
+
+The Coinsbuy access vector remains unresolved; simultaneous Ethereum/TRON activity does not by itself prove private-key compromise, API compromise, or insider access. The Allbridge August Base/CCTP incident is documented as a second exploit but contributes no direct-watch seed because no complete attacker identifier was available in authoritative reporting.
+
+The Harmony native and hex identifiers above remain four underlying accounts, not eight. At the August 21 follow-up cutoff, no new complete qualifying Solana threat address had been identified. Later additions, including Rain, Aquifer, and the fake GTA VI drainer, are documented in their dedicated sections. Truncated Lazarus BTC destinations and other incomplete identifiers remain excluded.
+
+---
+
+<a id="section-august-22-follow-up-bofur-capital-address-poisoning"></a>
+## August 22 Follow-Up: Bofur Capital Address Poisoning
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Incident:** Approximately $2 million stolen after a look-alike address was seeded into the victim's transaction history; proceeds were converted into approximately 2 million DAI.
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xf0e6a49668de1195b931a3717c9cc36fc19721af` | Spoofed destination used in the theft | High | P1 direct watch |
+| Ethereum | `0x692729bcd0887b8d02b8ff3169220ba0f4e17251` | Stolen-funds swap and consolidation account | High | P1 direct watch |
+| Ethereum | `0xe2ebfd6f329a6330ab7eee68ce1328c21d31816a` | Final DAI storage and consolidation address | High | P1 direct watch; highest-priority proceeds endpoint |
+| Ethereum | `0xedda4e01669d30faa04a9cb75488abc366ee4143` | Address-poisoning campaign controller | Medium-high | P1 direct watch and graph expansion |
+| Ethereum | `0xde39ef679e12574279e3ed35de4b0721beae27de` | Forgery and poisoning contract | Medium-high | P2 infrastructure monitoring |
+
+### Explicit Exclusions and Graph-Only Pivot
+
+| Address | Role | Treatment |
+|---|---|---|
+| `0x7ba7f4773fa7890bad57879f0a1faa0edffb3520` | Victim wallet | Do not threat-label |
+| `0xf0e67a1896e814e30c011e36174de28caa9ab1af` | Legitimate intended payee | Do not threat-label |
+| `0xe2ebba3e64f25f8badf35d2760473748d673416a` | Separate self-poisoning look-alike | Graph expansion only; exclude from primary threat-address CSV |
+
+The real and spoofed destinations share a similar visible prefix and suffix (`0xf0e67a...a9ab1af` versus `0xf0e6a4...19721af`). The controller and contract are retained at medium-high confidence for broader campaign attribution; the theft path and final DAI endpoint are high confidence.
+
+---
+
+<a id="section-august-24-follow-up-term-finance-vault-governance-exploit"></a>
+## August 24 Follow-Up: Term Finance Vault Governance Exploit
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Incident:** Approximately $8.5 million removed from Term Strategy/Meta Vaults after a governance-layer takeover; roughly 2,843 ETH and approximately 1.68 million DAI were consolidated at one address.
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xD5183d8BfC65a50863C62aF2538198A8288FFc13` | Exploit proceeds, consolidation, active dispersal, and Tornado Cash laundering source | High | P1 direct watch; highest priority |
+
+### August 25 Laundering Update
+
+PeckShield monitoring reported that the same P1 address deposited **300 ETH**, approximately **$741,000**, into Tornado Cash in three 100 ETH transfers. Its operational role has therefore progressed from proceeds storage to active dispersal and privacy-protocol routing.
+
+Tornado Cash pool, router, and relayer contracts remain laundering-infrastructure pivots and must not be labeled as attacker-controlled.
+
+### Attribution and Infrastructure Boundaries
+
+- No named threat actor is established.
+- The exact path used to obtain or exercise sufficient vault-governance authority remains unresolved.
+- Approximately 2 ETH sourced from Tornado Cash is funding-path evidence, not identity attribution.
+- Tornado Cash contracts, Term and Yearn infrastructure, ordinary governance participants, and later exchange or service counterparties remain graph pivots unless separately attributed.
+- The Sandbox SAND bridge indicators `0xAbE0...4D22` and `0x638C...F296` are truncated and are not added to the wallet dataset.
+
+---
+
+<a id="section-august-25-solana-investigative-watch--no-new-threat-wallet-seeds"></a>
+## August 25 Solana Investigative Watch — No New Threat-Wallet Seeds
+
+**Case file:** [`Multi-Chain/August-2026-Security-Sweep/`](./Multi-Chain/August-2026-Security-Sweep/)  
+**Non-wallet IOCs:** [`investigative_iocs.csv`](./Multi-Chain/August-2026-Security-Sweep/investigative_iocs.csv)
+
+| Item | Evidence status | Repository handling |
+|---|---|---|
+| FOMO iOS allegations | 662 SOL transfer verified; FOMO causation and $6M estimate unverified | Investigative only; no victim/attacker pair or direct seed |
+| Fake Seeker / SKR page | Malicious claim-page classification at medium-high confidence | Domain IOC only; no wallet label |
+| Fake `$WAR` reward pages | Wallet-drainer phishing campaign at medium-high confidence | Campaign intelligence only; no complete retained wallet or domain |
+| Kylie Jenner / `$KYLIE` promotion | Reported account compromise and token promotion; rug/deployer attribution unresolved | Token-mint context only; not an attacker wallet |
+
+These items are not counted as confirmed Solana protocol exploits or confirmed rug pulls.
+
+---
+
+<a id="section-rain-legacy-solana-card-contract-exploit"></a>
+## Rain Legacy Solana Card-Contract Exploit
+
+**Incident date:** August 28, 2026
+
+**Network:** Solana
+
+**Case file:** [`SOL/Rain-Legacy-Contracts/`](./SOL/Rain-Legacy-Contracts/)
+
+**Machine-readable seeds:** [`addresses.csv`](./SOL/Rain-Legacy-Contracts/addresses.csv)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0xa1a15f1b0d4878873f2933573e4385ab1e4df25c` | Pre-exploit funding seed that bridged operating gas to Solana through deBridge | High incident linkage; common control unresolved | P1 direct watch and graph expansion |
+| Ethereum | `0x775028b2ce02844e8947905e4d655940a76cf559` | Upstream pre-exploit funding seed | High incident linkage; common control unresolved | P1 direct watch and graph expansion |
+| Solana | `FVNFzqAny8spWdPmYw6RQ9TkYa29ueFFiqCFD1gQnCEj` | Principal Rain legacy-contract drainer, collection wallet, and source of 10,000 SOL transfer | High | P1 direct watch |
+| Solana | `4kjsW9dPsqzvuhQVP3P23cvZisdoHE5dR8NdD1TMPKKE` | Proceeds and conversion wallet receiving more than $1M in SOL before USDC swaps | High | P1 direct watch |
+| Ethereum | `0x2cE21E4921d3Eb116526c3651Dac0257657338D5` | Cross-chain laundering and proceeds pivot routing funds toward Tornado Cash | High incident linkage; medium-high control | P1 direct watch with proceeds-role label |
+
+Avici reconciled 1,685 affected users and $500,859.22 in unauthorized card-balance withdrawals. Tria confirmed another 636 users and $431,945, establishing a 2,321-user / $932,804.22 reconciled subset. Blockaid also identifies Solayer Pay as affected and estimates approximately $1.1 million in fleet-wide attacker cash-out. Solayer Pay's separate loss and victim count remain undisclosed; the roughly $167,195.78 difference must not be assigned entirely to that program.
+
+The principal address was published by independent transaction-level reporting after earlier coverage exposed only `FVNFzq...CEj`. It was not reconstructed from a truncated form. Subsequent tracing resolved the next Solana proceeds wallet and the Ethereum-side laundering pivot. Blockaid's September 2 post-mortem added the two Ethereum funding seeds and reconstructed 2,945 unauthorized administrator additions plus 5,288 collateral withdrawals, totaling 8,233 core exploit transactions. Approximately 455.9 ETH ultimately entered Tornado Cash.
+
+The funding addresses are high-confidence incident-linked infrastructure; common ownership with the Solana exploiter remains unproven.
+
+| Network | Address | Non-attacker role |
+|---|---|---|
+| Solana | `26DkA98jjctzPkBEteUsN935CR4dsKx3XvjrtE7MeL4a` | Drained Rain legacy card-contract deployment |
+| Solana | `CWgkFB7ngUc9cGD1LryyhP7h6xYWtwrAjhSKKCoR1gkz` | Same-opcode Rain legacy card-contract deployment |
+| Solana | `3zVB27Gap6fbxpAcV2hsBBUcV3vRjkCikBXREiyBzDuc` | Same-opcode Rain legacy deployment; no confirmed loss disclosed |
+| Solana | `8r2jms1vAnHhtCWxDNSgiHvQNSzzJvGa9oBRCbBPCBNN` | Same-opcode Rain legacy deployment; no confirmed loss disclosed |
+| Ethereum | `0xd90e2f925DA726b50C4Ed8D0Fb90Ad053324F31b` | Tornado Cash router / laundering infrastructure |
+
+User collateral accounts, Avici, Tria, and Solayer Pay infrastructure, DEX pools, bridges, exchanges, market makers, Tornado Cash contracts, and ordinary counterparties remain victim, protocol, or graph-expansion context and must not inherit the attacker label.
+
+---
+
+<a id="section-icon-network-migration-contract-replay-exploit"></a>
+## ICON Network Migration-Contract Replay Exploit
+
+| Field | Value |
+|---|---|
+| Incident date | August 27, 2026 |
+| Official post-mortem | August 30, 2026 |
+| Networks | ICON, Sonic, and Ethereum |
+| Case file | [`Multi-Chain/ICON-Migration-Replay-Exploit/`](./Multi-Chain/ICON-Migration-Replay-Exploit/) |
+| Machine-readable records | [`addresses.csv`](./Multi-Chain/ICON-Migration-Replay-Exploit/addresses.csv) |
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| ICON | `hx130b7e31ad0fb67c8b0442df308d349202212b88` | Exploit relayer and distribution wallet; sole source of downstream exchange deposits | High; official attribution | P1 direct watch |
+| Sonic | `0x72659d1bcc69f15c62ad7eb0f2311952856f0fec` | Pre-positioned attacker hub and collateral-position wallet | High; official attribution | P1 direct watch |
+| Sonic | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Shared attacker EOA on Sonic | High; official attribution | P1 direct watch |
+| Ethereum | `0xA1b828019B43F92f7E5B6d340ccAFF08228fCB52` | Cross-chain exploit-proceeds and consolidation address | High; official attribution | P1 direct watch |
+
+ICON reports that two legitimate signed withdrawal messages were replayed 1,492 times, releasing 119,866,000 ICX and 531,600 bnUSD. Approximately 150.2 ETH and 31,204 USDC were the currently unrecovered portion at the official post-mortem cutoff.
+
+The shared EOA appears twice because Sonic and Ethereum require separate network monitoring; it represents one unique account key. The approximately 24 exchange deposit addresses are custody and evidence pivots, not attacker-controlled wallets. No named person or threat group has been attributed.
+
+### Tectonic / Cronos Zero-Seed Boundary
+
+The August 30 Tectonic exploit is confirmed, but the three indexed attacker and proceeds representations remain truncated as `0xc404...72dd`, `0x7d4e...4f2dc`, and `0x215a...d3fc`. None is added to this wallet index or reconstructed from partial strings.
+
+---
+
+<a id="section-aquifer-solana-amm-exploit"></a>
+## Aquifer Solana AMM Exploit
+
+**Incident date:** August 31, 2026
+
+**Network path:** Solana exploit execution to Ethereum proceeds consolidation
+
+**Case file:** [`SOL/Aquifer/`](./SOL/Aquifer/)
+
+**Machine-readable roles and exclusions:** [`addresses.csv`](./SOL/Aquifer/addresses.csv)
+
+### P1 Direct and Exploit-Infrastructure Indicators
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Solana | `7fTe9pvrwXJRBHq9MaSyVPR4PgEuhqLiA93Dxf4gRk7J` | Primary attacker, exploit execution, and proceeds wallet | High | P1 direct watch |
+| Solana | `DMBpPMaMpGM2mWiUMaqcHx9FwhPg9Ys7qg1X59NRgb68` | Malicious program impersonating the incoming token program | High | P1 exploit infrastructure and control-path pivot |
+| Ethereum | `0x2Dfe9e969796e2797278b02761dd9Ad6aE922746` | Cross-chain attacker and proceeds-consolidation wallet; 1,000.7956 ETH received | High | P1 direct watch |
+
+Bitquery reconstructed $2,469,729 removed through 212 one-sided swaps in approximately 40 minutes. The attacker supplied forged 165-byte accounts and a malicious incoming token program that returned success without transferring payment. Aquifer's upgrade-authority message later named the same Solana and Ethereum attacker addresses in an on-chain whitehat offer.
+
+### Explicit Non-Attacker Infrastructure
+
+| Network | Address | Role | Handling |
+|---|---|---|---|
+| Solana | `AQU1FRd7papthgdrwPTTq5JacJh8YtwEXaBfKU3bTz45` | Aquifer victim program | Protocol infrastructure; do not threat-label |
+| Solana | `GtwzYxBQcPFNFQcYbdELuaKzb4DGJpGVU2ehLhzbffCw` | Affected USDC vault | Victim vault; transaction filtering only |
+| Solana | `7C7Y3fyPYeAYqpc29uahDUQ84PQ255Avj2YEP9KpvyKx` | Affected USDT vault | Victim vault; transaction filtering only |
+| Solana | `AwtZZUJsRGLje9c5wE9q7zMNjA9ZkEuxTk8awBza14kr` | Affected WSOL vault | Victim vault; transaction filtering only |
+| Solana | `DKCGgPdyLcPFJGTZzkhYeenEUWXPu5VED5ourTrW8PAM` | Affected WETH vault | Victim vault; transaction filtering only |
+| Solana | `8af8RnAgyKzNt4fjDaP8w8pBekYVux1ja4AofavRyjox` | Aquifer-designated recovery address | Alert only for restitution; do not threat-label |
+| Ethereum | `0xb7EAA8cd5dFAD8021d9fB19c8a21613679f268F5` | Aquifer-designated recovery address | Alert only for restitution; do not threat-label |
+
+Routers, bridges, settlement wallets, market makers, and ordinary counterparties remain service or graph-expansion context. At Bitquery's September 1 cutoff, the Ethereum proceeds wallet had sent no transactions; that state is time-sensitive.
+
+### Injective Zero-Seed Boundary
+
+The August 31 Injective binary-options exploit is confirmed at high confidence, but indexed reporting exposes the Ethereum proceeds address only as `0x5a18...69ea`. The truncated identifier is not added to this wallet index or reconstructed from partial strings.
+
+---
+
+<a id="section-cyberleek--gta-vi-leak-and-token-campaign"></a>
+## CYBERLEEK / GTA VI Leak-and-Token Campaign
+
+**Assessment date:** August 28, 2026
+**Network:** Solana  
+**Status:** Active; real-world identity and initial-access vector unresolved  
+**Case file:** [`SOL/CYBERLEEK/`](./SOL/CYBERLEEK/)  
+**Machine-readable indicators:** [`addresses.csv`](./SOL/CYBERLEEK/addresses.csv)
+
+### Direct Actor-Linked Wallet
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `Hok9nbV89yBSKCttxe3goqajwbiqQa9mtHvQBsbJH3Np` | CYBERLEEK token creator and Raydium pool creator | High | P1 direct watch for new deployments, funding, exchange deposits, consolidation, and Fee Key interactions |
+
+### Strongly Linked Financial Pivot — Ownership Unresolved
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `Ec2qmcpCCD9hjahAcquiQf5JkZWCK68BUahCje1izYC7` | Purpose-built funding funnel that sent 10 SOL and 311.42 SOL to the deployer | High transaction linkage; unknown common control | P1 financial-support monitoring; do not automatically inherit the actor label |
+
+### Campaign Infrastructure — Do Not Threat-Label as Wallets
+
+| Address | Type | Handling |
+|---|---|---|
+| `ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg` | Primary token mint | Watch exact mint; separate from same-ticker copycats |
+| `EVQ9RCaHggai12cje6vTtFfNkhBuJfFZHhbgB3yyprVw` | Original 1B-token account | Historical evidence; current balance reported zero |
+| `CbfbaNpCGV64g2fbLBC2NXKSygeJJuC7S6i36cy8RMPo` | 270M allocation account and burn source | Historical evidence; retained balance was burned rather than sold |
+| `G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh` | Primary Raydium CPMM pool | Monitor liquidity, volume, and fee activity; protocol infrastructure |
+| `44isRZNypWAsseobWTKLcQP56A3STe8Um7XdstgFttrS` | Raydium Fee Key NFT | Critical revenue indicator; alert on transfer or fee collection |
+| `CMLqxbQU7CDKqzWPpAbKTgiQKuPV1tzYZNLyDjr1BwZz` | Secondary Meteora pool | Cross-pool market pivot; protocol infrastructure |
+
+### Attribution Boundaries
+
+- Public evidence supports playable-build access but does not establish that CYBERLEEK personally breached Rockstar or retained access to its systems.
+- The 270M creator allocation was burned; the reviewed evidence does not support a developer-allocation dump.
+- Approximately 98.43% of the creator-origin Raydium LP supply was reported permanently locked, while the Fee Key preserves an ongoing fee claim.
+- The approximately $128,809 fee figure was an August 23 accrual estimate. August 27 reporting later established a creator-fee claim, token sale, dispersal across four fresh wallets, and at least 91 SOL routed to KuCoin; researchers estimated aggregate proceeds near $270,000.
+- The four downstream wallets are not added as direct seeds because the reviewed reporting did not publish their complete addresses. Two complete transaction signatures are retained in the case transaction dataset.
+- Five high-profit early traders and four same-ticker copycat mints are retained in the case CSV as explicit non-actor rows and must not inherit the CYBERLEEK label.
+- Upstream hubs, relays, feeder wallets, services, pools, exchanges, token accounts, and look-alike dust addresses remain graph context unless independently attributed.
+- No named person, nationality, or link to the 2022 LAPSUS$ or April 2026 ShinyHunters cases is established.
+
+---
+
+<a id="section-fake-gta-vi-leak-wallet-drainer-campaign"></a>
+## Fake GTA VI Leak Wallet-Drainer Campaign
+
+**Report date:** September 1, 2026
+
+**Case file:** [`Multi-Chain/GTA-VI-Wallet-Drainer/`](./Multi-Chain/GTA-VI-Wallet-Drainer/)
+
+**Address data:** [`addresses.csv`](./Multi-Chain/GTA-VI-Wallet-Drainer/addresses.csv)
+
+**Domain IOCs:** [`domains.csv`](./Multi-Chain/GTA-VI-Wallet-Drainer/domains.csv)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Solana | `21iWU6FJWJ9FKKz4Jek2CyTh2x1fqs5jawjrNgE3nHjN` | Receiving address embedded in malicious Solana transfer code | High | P1 direct watch |
+
+Malwarebytes found that the analyzed fake GTA VI page retained only transaction fees and attempted to send essentially the victim's remaining SOL to this address. Realized loss and victim count remain unknown. The domains `centrodigestionedellarapina[.]life` and `dasunerforschtelandamendederwelt[.]sbs` are campaign IOCs, not wallet labels.
+
+The drainer remains separate from CYBERLEEK. Shared GTA VI branding does not establish shared infrastructure or control.
+
+---
+
+<a id="section-dojfbi-hamas--al-qassam-financing-and-laundering-network"></a>
+## DOJ/FBI Hamas / Al-Qassam Financing and Laundering Network
+
+**Public disclosure:** September 1, 2026
+
+**Networks:** TRON and BNB Smart Chain
+
+**Case file:** [`Multi-Chain/Hamas-Al-Qassam-Financing/`](./Multi-Chain/Hamas-Al-Qassam-Financing/)
+
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Hamas-Al-Qassam-Financing/addresses.csv)
+
+### Highest-Priority Seeds
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| TRON | `TAZEkqkjuHkYznF3Q8g9PKbpRuUNtUbgCB` | Hamas donation-consolidation and operational laundering wallet | High; official DOJ/FBI affidavit | P1 direct watch |
+| TRON | `TL192dbA29m2pyaug7m7gHCurzGbzFnLEx` | Downstream laundering and rapid Binance dispersal wallet | High; official DOJ/FBI affidavit | P1 direct watch |
+| BNB Smart Chain | `0x0c78ab86e809e1f65374055610f9fcb5cd100734` | Financier and fiat-conversion network account; seizure target | High; official DOJ/FBI affidavit | P1 direct watch |
+| BNB Smart Chain | `0x8a48E24D664f481e5B8b98f6efa4Af43DC765834` | Incident-linked cross-chain exchange and laundering hop | High flow linkage; medium control confidence | P2 direct watch and graph expansion |
+
+### Donation and Financing Address Set
+
+| Network | Address | Classification |
+|---|---|---|
+| TRON | `TA315GUGunjKDhv1ZL1YTvy7asPzJhAtL1` | Official fundraising-network seizure target |
+| TRON | `TS4toQBwagdM2oD1Q9eNqWoL8s7fMg5U2b` | Official fundraising-network seizure target |
+| TRON | `TWsomy6GFJqhswDjJcufPgTpMKGhwcVhdw` | Official fundraising-network seizure target |
+| TRON | `TVWRL9AY81gDdChuYiCfiNm5U39DNTyQwG` | Official fundraising-network seizure target |
+| TRON | `TYjWo3X1eFm8ufpb1jPQf8xv5bfriszGgq` | Official fundraising-network seizure target |
+| TRON | `TM1ywQ3ApL8ai2VTR6515fmzNdgFdKfa6J` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TAbC5hoom3mktAGf3KZBNdxhEEujdUtpWG` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TFBnvjWAjXkRAigJSPR5YqzowMNT85y1YZ` | Official fundraising-network seizure target with direct email evidence |
+| TRON | `TDeBgBrQjgySyP9zPje3CRBCT2MQd13hy3` | Directly solicited donation address |
+| TRON | `TWE3K4dctpkdQgXG5VRHU4ND1ssh3HCCFg` | Directly solicited donation address |
+| TRON | `TCeCc94bcYiooTuGsHojDCUNbdneK2qgn3` | Directly solicited donation address |
+| TRON | `TL5Npc5AA2CuWcWzjzemGV1zBo3dadUgdF` | Directly solicited donation address |
+
+### Custodial Money-Mule Accounts
+
+| Network | Address | Classification | Boundary |
+|---|---|---|---|
+| TRON | `TKmyTRdBaKXviN5MCJHD7nvfmoSTQ6zzmS` | Binance-linked likely money-mule account | Custodial user account, not a self-hosted wallet |
+| TRON | `TYZwCibn8uH1jr9c7i9Vc46mPoGpS9cvsz` | Binance-linked likely money-mule account | Custodial user account, not a self-hosted wallet |
+
+DOJ reports approximately $560,000 seized. The June warrant package supports the 18 role-separated records above, but not one common controller for the full set. Exchange hot wallets, consolidation sweeps, token contracts, and transaction neighbors do not inherit the Hamas label.
+
+The submitted addresses `TWQTTSqorX2dqVYmVn8j1WNNaKgmL7ShkV` and `TYMRKshB4rMrr2UP3HF9AFM1PGjpFSKLHh` are withheld because they could not be reconciled to the reviewed DOJ release and warrant packages.
+
+---
+
+<a id="section-liquid-network-unauthorized-peg-out"></a>
+## Liquid Network Unauthorized Peg-Out
+
+**Incident date:** September 6, 2026
+
+**Case file:** [`Multi-Chain/Liquid-Network-Peg-Out/`](./Multi-Chain/Liquid-Network-Peg-Out/)
+
+**Machine-readable records:** [`addresses.csv`](./Multi-Chain/Liquid-Network-Peg-Out/addresses.csv) and [`transactions.csv`](./Multi-Chain/Liquid-Network-Peg-Out/transactions.csv)
+
+### Direct-Watch Bitcoin Seeds
+
+| Address | Classification | Confidence | Monitoring |
+|---|---|---|---|
+| `bc1ql4mfu6aundtkksxklfajs2h3t9nzcd6gyqjlte` | Primary consolidation, negotiation, partial-return source, and residual proceeds wallet | High incident linkage and operational control; identity unknown | P1 direct watch and graph expansion |
+| `bc1qgslsydz56d0ed6827hdemfmk5w2f6ldyc6wt7p` | Initial peg-out recipient and intermediary; received 3,996.01834922 BTC | High flow linkage; service-custody caveat | P2 direct incident-flow watch; attacker-control label withheld |
+
+The initial recipient immediately forwarded 3,995.99999857 BTC to the consolidation wallet. On September 7, the consolidation wallet returned 3,400 BTC to the federation in transaction [`a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d`](https://mempool.space/tx/a6d697a25266ce3c78774fd1d75f896b7af522ada209b0f6228ea497bc49a46d). Approximately 598.49 BTC remained at the cited snapshot. The actors' `whitehat` claim and any authorized bounty remain unverified.
+
+[Bitquery describes the initial forwarding as SideSwap's service payout](https://bitquery.io/investigations/liquid-network-hack-4000-btc-op-return). Its P2 incident-flow watch therefore does not assert attacker ownership. The case records one threat-labeled P1 seed, one monitored P2 intermediary, and one reserve exclusion; both watched addresses were already present.
+
+### Explicit Non-Attacker Infrastructure
+
+| Address | Classification | Handling |
+|---|---|---|
+| `bc1qdlld6antmv4xug242ed83q7k4rqw50cwfns38szx4qu2f4jwaxxsuhwxxr` | Liquid Federation reserve and proof-of-reserves address | Victim/protocol infrastructure; do not threat-label |
+
+Other outputs in the batched federation payout, Liquid federation members, SideSwap infrastructure, and ordinary peg-out users do not automatically inherit the incident label.
+
+---
+
+<a id="section-redsonic--reddio-vault-exploit"></a>
+## RedSonic / Reddio Vault Exploit
+
+**Incident date:** September 5, 2026
+
+**Case file:** [`EVM/Ethereum/RedSonic/`](./EVM/Ethereum/RedSonic/)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| Ethereum | `0x70f2333d21ed7e7d105f6578227a9a747687982c` | Exploit execution and proceeds wallet | High | P1 direct watch |
+
+SlowMist attributes the approximately 9.25 ETH exploit to cross-vault asset double counting amplified through flash-loan share-price manipulation. No named real-world actor is established.
+
+| Address | Classification | Handling |
+|---|---|---|
+| `0x4315990d9eeaffdfafd49958b4851f203fa1126f` | RedSonic Diamond | Victim/protocol infrastructure; do not threat-label |
+| `0x92ecc5deacb14937867686ca8b85dd8a65b74704` | Vulnerable vault implementation | Victim/protocol infrastructure; do not threat-label |
+
+---
+
+<a id="section-suspected-gomining-linked-multi-wallet-drain"></a>
+## Suspected GoMining-Linked Multi-Wallet Drain
+
+**Incident window:** September 4-5, 2026
+
+**Case file:** [`EVM/Ethereum/Suspected-GoMining-Drain/`](./EVM/Ethereum/Suspected-GoMining-Drain/)
+
+| Network | Address | Classification | Flow confidence | Ecosystem attribution | Monitoring |
+|---|---|---|---|---|---|
+| Ethereum | `0xa7372Fa49da5e52cf31f35cCE517C4768FeD4704` | Approximately 1,147 ETH stolen-fund consolidation address | High | Medium for GoMining linkage | P2 direct watch and cautious graph expansion |
+
+The consolidation address is actionable, but the project-level label remains provisional. Affected-wallet tags and prior GMT exposure do not establish that every wallet belonged to GoMining or that this is a confirmed `GoMining attacker` address.
+
+---
+
+<a id="section-dream-health-chain-exploit"></a>
+## Dream Health Chain Exploit
+
+**Incident date:** September 5, 2026
+
+**Case file:** [`EVM/BNB-Chain/Dream-Health-Chain/`](./EVM/BNB-Chain/Dream-Health-Chain/)
+
+| Network | Address | Classification | Confidence | Monitoring |
+|---|---|---|---|---|
+| BNB Smart Chain | `0xd3a8d0a9f55cf679fff6f277e49afc95b49d2b07` | Attacker and proceeds wallet | High | P3 direct watch |
+| BNB Smart Chain | `0x226923d34a10f3d54b57b9f4b685e82c6cba968a` | Attacker-controlled exploit contract | High | P3 malicious infrastructure pivot |
+
+SlowMist reports approximately $71.8K lost through a business-award state-machine logic flaw. The P3 rating reflects impact-based repository priority, not weaker address linkage. Victim contracts and affected users remain excluded.
+
+---
+
+<a id="section-august-24-ofac-alert-iranian-mois-linked-cyber-actor-network"></a>
+## August 24 OFAC Alert: Iranian MOIS-Linked Cyber-Actor Network
+
+**Case file:** [`Multi-Chain/Iranian-MOIS-Cyber-Network/`](./Multi-Chain/Iranian-MOIS-Cyber-Network/)
+**Machine-readable addresses:** [`addresses.csv`](./Multi-Chain/Iranian-MOIS-Cyber-Network/addresses.csv)
+**Source:** Official OFAC / U.S. Treasury
+**Confidence:** High
+**Treatment:** Watch every listed identifier directly; preserve counterparties as graph-expansion pivots unless separately attributed.
+
+OFAC's August 24 action publishes 30 BTC, ETH, and TRON identifiers for four named members of a cyber group Treasury says operates on behalf of, or for the benefit of, Iran's MOIS. The separate Tsoris USDT/TRON address is an official direct-watch seed but is not part of the MOIS cyber cluster.
+
+### Keyvan Fayyaz Ghareh Blagh — 10 P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `bc1qf6zxs4lkp9umh6hf087mh70w0ymcyt8cunp58r` | Sanctioned MOIS-linked cyber actor |
+| Bitcoin | `bc1qr2pwmvkpq5tc5um2g9uh34yyu6wepwx89rts70` | Sanctioned MOIS-linked cyber actor |
+| Bitcoin | `bc1q4ktvxxhhvf8qhs9qkdsm9arcxfmmeex6rl7n50` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x4060cbf80734193f521a3cc6fd4e985df2825279` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x56de1527136f76a809e5b14ded6103eecd072ba7` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0x8694ed130432be2cd3efff2e4d9dc52351dc7423` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0xbd3276f265b83b5e828c05f46cde9d10a1521a24` | Sanctioned MOIS-linked cyber actor |
+| Ethereum | `0xf1c4c44d2dcbcfa704349e3b57628dbd8404e597` | Sanctioned MOIS-linked cyber actor |
+| TRON | `TXR4FDAZZLDSvuRxveW9aBMybbaS12WWHk` | Sanctioned MOIS-linked cyber actor |
+| TRON | `TP3kVtnFgDSoSqzw178nLJtGWNjrbKNgB6` | Sanctioned MOIS-linked cyber actor |
+
+### Mojtaba Ghal'eh-Kuhi — 2 P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `1GXeCkFQq7SYo6B7wdLAPkkri6NFTFB7No` | Sanctioned MOIS-linked cyber group leader |
+| Ethereum | `0x1b8579cf6ab12ea6b74ac5fa41f3829a3cb61e6e` | Sanctioned MOIS-linked cyber group leader |
+
+### Arman Kahzadian — 3 P1 Digital-Asset-Theft Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `1JGPiQGK78xTxAVoxA1MjK3Z15M84Rj6BL` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+| Ethereum | `0xeb507efa9ee692a4c774ad1de9f3cb26fc459da3` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+| Ethereum | `0xef85a6fafa5942a964dc618e94e230881d29ce2a` | Sanctioned cyber actor; Treasury-described digital-asset theft focus |
+
+### Behzad Mesri — 15 Materially Updated P1 Seeds
+
+| Network | Address | Classification |
+|---|---|---|
+| Bitcoin | `12aNKp2iDKuhEde2YfPdd4DFGenRUTKupL` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x252a8bd2319d8a555b872990601221b3a2053bce` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x1CAb8177ACe78b1B6B1c393371F4f2dCAE40CbEB` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x6Fac4D18c912343BF86fa7049364Dd4E424Ab9C0` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xA40cFBFc8534FFC84E20a7d8bBC3729B26a35F6f` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x7F03679B56d8772530EFA516b58Bb83d4829E881` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x8ac5381FCD9e7395D14e02986c344aADA84B4bC6` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x9697749A9e8D6C119D8EEb0d6268a1b99C40684c` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x9DD7fA4B4950154F7e75BdD8A77266B99b94Ec08` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xb5A69Da691670F62510793F79a9B36c7db1A7b7c` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0x6B0736Fed0634e15E19CC57fBA19cd179c13AbCA` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xd81414ABc631C6CADAe1C6198b0c2b15a9B4fDe5` | Newly published identifier on existing sanctioned cyber-actor entry |
+| Ethereum | `0xF45Ecc3a59C7911181C659cE9115854c6175Be91` | Newly published identifier on existing sanctioned cyber-actor entry |
+| TRON | `TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh` | Newly published identifier on existing sanctioned cyber-actor entry |
+| TRON | `TEsxMcVocweTM82Mdmc5diKC6qyCWqSpPv` | Newly published identifier on existing sanctioned cyber-actor entry |
+
+### Separate Iran Sanctions-Finance Seed
+
+| Network | Address | Entity | Treatment |
+|---|---|---|---|
+| TRON / USDT | `TJCBpxZ3yC7C7oegSRZMFxBcscmUVeSA36` | Almpertos Tsoris | P1 direct watch; do not merge into the MOIS cyber cluster |
+
+### Attribution Boundaries
+
+- OFAC publication makes the listed identifiers direct sanctions-watch seeds; it does not automatically sanction or actor-label their counterparties.
+- Exchange, bridge, router, mixer, protocol, and service addresses remain infrastructure pivots unless independently attributed.
+- Kahzadian's Treasury-described Bitcoin-wallet theft does not establish that the stolen wallet is one of his three published sanctions identifiers.
+- Mesri's 15-address set is an authoritative common-entity attribution, but specific operational roles require separate transaction analysis.
+
+---
+
+<a id="section-nesa--cosmos-evm-exploit"></a>
+## Nesa / Cosmos EVM Exploit
+
+**Incident:** August 24, 2026. **Report:** September 8, 2026.
+
+**Case file:** [Multi-Chain/Nesa-Cosmos-EVM/](./Multi-Chain/Nesa-Cosmos-EVM/)
+
+| Network | Address | Role | Confidence | Treatment |
+|---|---|---|---|---|
+| Ethereum | `0x9AE755D23Fc948fE94C9364A2398fd508a2AB0d2` | Primary attacker; cross-chain proceeds and consolidation | High | P1 direct watch |
+| Ethereum | `0xB92dF70F3d25eD25265c7C341C9D2550c42Ff83A` | Exit-trading and liquidation; funding/flow-derived association | Medium | P2 direct incident-flow watch and graph expansion |
+
+The bridge record exposes exactly 257,703,733.288579599652028616 NES delivered to the primary wallet. The separate liquidation reconstruction reports approximately 185.74M NES sold across 241 fills for approximately 95.97 ETH. Source-chain attacker identity and the precise Nesa-side call remain unresolved. Hyperlane, relayers, exchanges, CoW Protocol, Uniswap, token contracts, and the mint null address remain infrastructure context.
+
+---
+
+<a id="section-xinbi-guarantee--september-9-ofac-tron-disclosure"></a>
+## Xinbi Guarantee — September 9 OFAC TRON Disclosure
+
+**Case file:** [TRON/Xinbi-Guarantee/](./TRON/Xinbi-Guarantee/)
+
+All 52 identifiers below appear directly in the [official Xinbi Guarantee SDN entry](https://ofac.treasury.gov/recent-actions/20260909). All are High-confidence entity-attribution records with P1 direct sanctions-watch treatment. Their individual operator, operational role, and membership in separate freeze or seizure subsets are not inferred.
+
+| Network | Address | Classification | Confidence | Treatment |
+|---|---|---|---|---|
+| TRON | `TW5tokvhEfrb77z98Rc8HqbkzQJ6sxYtGX` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBKpozurdWLrbKkxtDqkveeq1dSB8Axj3V` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWqcMjV7Wq2RHe2CSiKQHpkn6A7B2AWUPe` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TG83Fk56S2mycAUMYHZyZp9wMg6DCf4bUn` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYkE8VwX1SGHM3Q2CA29nka5U2F2khKAj5` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TEECjwHqVG8sDmM3VtscjuCaRe5p351MU7` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TDU61o35UEe5hdB3R16c116DrPSV4kiyKz` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TKRNCETxbiMmyyMraCkgdXKdLr1ZkmKxV5` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTWRf2MD6zJ26bS4uKCNrcp84aAr7AmTjm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYvjt4ZKfsipHjA52nzgjUjDBF622SLCih` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXHX2NUvcgft4zs6MkkUtdNVERPTavHDWN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TK3n8pGHvDTcK53mpfeDAMzdwjb22qvFU3` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGSGw4aUeAMNCfD8WqLRLe8ErQiJ1vqghj` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBNjCi1d5Ns6ec5aMp28LpfKcX7xTpykAN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `THH9JJNbLDN7qs1CyTxJQEjhC9y5FnZUhU` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TQhT3QWAbFiy6GEYuBrbK97uP3XVmTpRD8` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXka5xc6mEkcoVXR7F2TFDKernyLt3XyW4` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TH1yknksde3pBY3oWVhUxVTbWbLqdafqYT` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TLHWeZcDmXk6idnaGwsQ9CEmK24KpoGgRM` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTmvr41Fa9LeWJQ8NKQ5t4wFUspgEA1mJF` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `THifikwE6RtxYNWdcP9CWUjXS8Gh1xBCoa` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TR983hNyUNgrNSB1xncG9thZNhgYpbNvSh` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TNwe3WoEX6XrQ5NPAeWPkvpTtdaf27XYxK` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGcewGsDLy7Fzc66kXXEB8Kh2b6u2XCvnV` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYq3iRujcBELXX89i9JY32UmLxcyZAJe7E` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TRyQivSkQChryfnYnE1bUmJhnL3TvKUpvS` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGjYoJLhfAiD2BRV9hwCeuHhZ54D3gLKTd` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXT9atp8qBMXKbFYnRyWkM88UXYyobQNLP` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TThRMUSidD4gQeCnu56cFfCmqS421Nmbu7` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TAkpWPt2JZdiLSkG7ZX2VAQkZQsnGZ1nqh` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TZ8zsUe9M9tkhrFtfE7vMMmEwgVEF3n2UN` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TM9c5uR2UKwd5fMySgaoYSjphRyi3AjAtc` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTjHn8qNVxazB3UroiekGRPuM2w2GwvNbn` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TWHwre81Mv4hvupNdHnsYX9FPocm29dQQQ` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TT4WKPQscK7fkxrPj1E9PjZp1HTVBUpoTm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TYZKYK2fbvw3EAPES2daFvoV4DqPna43Jd` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TF7LUSoZQyDFxTFzCL11saBHAqMAyPh8dK` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TSmcHwvTR27Ao4NN8HhPFCVcPU5aTEqLDt` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TJ6NznpBV5uUpp5uZGDub9zD1999999999` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TPD4pmojFA2f2RvgnSDa7YCuGJ4BeS9yK2` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TXtH3iUipk6DZnYNu3kgjDsnSSLHLz8ZZU` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TBEqQGTxXRWXXeqe7ZwmSB6hc5MMMMMMMM` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTYf9kcvABTSizXsdbC2E5co6jx9jvJ111` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTrHak4biV5ZtNwN1K8oi7916CjmeVVeH8` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TCoKgVdQbSyPnJnf9oNUNQn3dWMDD9wbQL` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TNUQ2rZSRjZaGhtbwaFZEvuaemMj5z5Fnm` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TTWBrNgoooSs9HQQKMty3ZQDbS9LzgjNiH` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TGu8xk3u1QcA9FNCQZ4RUTvniiCjNkjXkA` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TAQPzv9941nVuTj4ng2vd6L11Re57r42pW` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TMdZfVVAsxKsbXGmV3kBnEgM69z3QHH3kz` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+| TRON | `TZ42sU5kQ2n5rLZ6PhEGkmfLtmHjoi2vpr` | OFAC-listed Xinbi wallet infrastructure | High | P1 direct watch |
+
+Counterparties and service infrastructure do not automatically inherit sanctions or attacker labels. The reported ten-address USDT freeze is a distinct set; only `TWPma8xH48AEN93x2krdukV9e1j6sPsBeS` is individually identified in the [reviewed reporting](https://www.cryptotimes.io/2026/09/08/misttrack-reports-39m-usdt-freeze-across-xinbi-linked-wallets/). Nomic remains a zero-seed incident review with no guessed attacker address.
+
+---
+
+<a id="section-dominion-market--silv--september-11-key-compromise"></a>
+## Dominion Market / SILV — September 11 Key Compromise
+
+**Case:** [SOL/Dominion-SILV/](./SOL/Dominion-SILV/). Three-of-five multisig signing keys were compromised; this is not an established Solana or Squads protocol vulnerability.
+
+| Network | Address | Role | Confidence / treatment |
+|---|---|---|---|
+| Solana | `BmgpLvcQJPDuVHwGVGkJo1mkRVnRaeJ9JyhrYrRjrrkZ` | Primary attacker / consolidation | High; P1 direct watch |
+| Solana | `Ge2GYHJm4MGiWiWpSVyru9vHdLBZGtVnYd7yHqnYAH7g` | Treasury-drain / liquidation | High; P1 direct watch |
+| Solana | `6QAoKpU6QKqHS2ZxkKPYp1bHbvZQf9q1jAWxeTH1qvtF` | Late consolidation / Chainflip staging | High; P1 direct watch |
+| Ethereum | `0x8b3423a3c06ab16484ed2c561a86118f040adaaf` | Explicit Chainflip destination; 9.25 ETH | High flow linkage; P1 watch and backward tracing |
+| Ethereum | `0xd13772ef959a4b227c3e9e62a4c971ce8886eeff` | Secondary destination; 9.83 ETH; possible service | High flow linkage, Medium ownership; P2 proceeds watch; no threat label |
+| Solana | `EHQZBu5y3G8Lo5Vb2HH48DRjtajdzJwX499Cs9E8mSfY` | Attacker-added authorization signer | High insertion evidence, Medium-High inferred control; P1 infrastructure watch |
+
+The SILV mint `SiLVFMgD3eD2rgK628NbTBq9MnuJF5FW2CRaVyTB35L` is victim/technical context. Stolen Dominion signers, Chainflip agents, deposit channels, and other counterparties do not automatically receive attacker labels. Approximately $3M pre-attack nominal token value is distinct from approximately $238,000 realized proceeds.
+
+<a id="section-safe--rseth--original-exploiter-and-mev-proceeds"></a>
+## Safe / rsETH — Original Exploiter and MEV Proceeds
+
+**Case:** [EVM/Ethereum/Safe-rsETH-Module/](./EVM/Ethereum/Safe-rsETH-Module/). September 15 auxiliary authorization flaw; Safe core contracts are not identified as vulnerable.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x0dC2c5D6b05A317076CF501f7E7be36a5dfe9b66` | Original exploiter | High; P1 threat seed |
+| `0xFDe0d1575Ed8E06FBf36256bcdfA1F359281455A` | Yoink MEV frontrunner | High observed role; P2 incident-flow watch; no original-attacker label |
+| `0xC70f00CD7E461686b04B0E912E309becA8b80ea0` | Yoink-associated holder of approximately 2,882.37 rsETH at publication | High proceeds linkage; P1 direct watch; intent unresolved |
+| `0x80BF7Db69556D9521c03461978B8fC731DBBD4e4` | Yoink bot contract | P2 infrastructure monitoring; distinct from original exploiter |
+
+Only the original exploiter has a threat label in this case. The other three records remain directly monitored with unresolved intent. Victim Safe `0x40E93a52F6Af9fCD3b476aeDADD7FeABD9f7AbA8` and executor `0x4f0055926c839D1d960a82CBF84E2eE933958ebC` are victim/protocol context. The dated proceeds snapshot and reported 24-hour restriction do not establish a current balance or permanent freeze.
+
+<a id="section-ref9334--kremlin--operator-and-c2-contracts"></a>
+## REF9334 / KREMLIN — Operator and C2 Contracts
+
+**Case:** [EVM/Ethereum/KREMLIN-REF9334/](./EVM/Ethereum/KREMLIN-REF9334/). Elastic's September 14 attribution concerns malware configuration control rather than a stolen-fund cluster.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x5C32A09873be70a92fd8bB5A9fED7967dE06BdE6` | Contract deployer and configuration administrator | High; P1 direct watch |
+| `0x902EDbFECFF38f285Bf26283fB9cEB3700061873` | Early malicious C2/dead-drop contract | High; P1 infrastructure watch |
+| `0x64Def0A6099c4DE9C413B108EAae85A3C7457615` | Successor C2/dead-drop contract | High; P1 infrastructure watch |
+| `0xCD7360A83E5cdbBbbbcEB0e78748babA6740d07b` | C2/dead-drop contract active at publication | High; P1 infrastructure watch |
+
+Four financial counterparties are retained only as contextual pivots in the case dataset. Their controllers are not attributed to KREMLIN. Brazilian victim concentration and operating-hour patterns do not establish operator nationality or location; the campaign name does not imply a Russian link.
+
+<a id="section-fetchai--nunet--singularitynet--september-1920-cluster"></a>
+## Fetch.ai / NuNet / SingularityNET — September 19–20 Cluster
+
+**Case:** [Multi-Chain/Fetch-NuNet-SingularityNET/](./Multi-Chain/Fetch-NuNet-SingularityNET/).
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x1572F2af7696b39c85E3221CDE8EFb640F86c362` | Exploit initiator / attribution seed | High; P1 direct watch and backward graph expansion |
+| `0x2dcc1085fDCf418B421E45e86e4e54637cc21dfE` | Common proceeds / unauthorized-mint recipient | High; P1 direct watch and forward tracing |
+
+Fetch.ai converter `0xab424A430CC09864fA1277A38193111705ADF3A3` and NuNet deployer `0x863F13e5B505f1Eb17803b94EC9d3DaF80092165` remain victim/compromised infrastructure. Different asset-unit totals, snapshot holdings, and realized sale proceeds must not be summed into a single loss estimate.
+
+<a id="section-etherfi-legacy-atomicqueue--resolved-full-address"></a>
+## ether.fi Legacy AtomicQueue — Resolved Full Address
+
+**Case:** [EVM/Ethereum/Etherfi-AtomicQueue/](./EVM/Ethereum/Etherfi-AtomicQueue/). September 11 incident; complete identifier checked September 22.
+
+`0xa5cc6e490bce9185fa47b421f2eac677a83b64ea` is a High-confidence P1 attacker seed, resolved from the public explorer link and security-firm alerts and corroborated by the successful transaction's initiating EOA. The vulnerable queue `0xd45884b592e316eb816199615a95c182f75dea07` is victim/protocol infrastructure. This supersedes the submitted truncated-only exclusion; no missing characters were guessed.
+
+<a id="section-september-campaign-and-coverage-notes"></a>
+## September Campaign and Coverage Notes
+
+[FomoPeek](./Multi-Chain/FomoPeek/) now has one P1 Ethereum attacker seed and five separately classified proceeds pivots, verified against Salus's published attribution on September 24. It is distinct from the earlier disputed FOMO allegation. The [September reconciliation](./Multi-Chain/September-2026-Security-Sweep/) links every resubmitted report to its canonical location, preserves Liquid's newer P1 consolidation/P2 service-intermediary correction, and documents the newly resolved ether.fi identifier.
+
+<a id="section-fomopeek--september-24-ethereum-attribution"></a>
+## FomoPeek — September 24 Ethereum Attribution
+
+**Case:** [Multi-Chain/FomoPeek/](./Multi-Chain/FomoPeek/). Approximately 579,900–579,984 USDT attributed at the source snapshots; private-key theft rather than a contract exploit.
+
+| Ethereum address | Role | Treatment |
+|---|---|---|
+| `0x6d37f2C5e8F8546b648D317295565dA95975f4BB` | Primary attacker / consolidation seed | High; P1 direct watch; threat label |
+| `0x111faeb95cd0786593433bcc762dc5c1debf541c` | FixedFloat-route hop | High flow linkage; P2 watch; ownership unresolved |
+| `0x2d53113c89c83c520c17b8bbcdc22aa0518a38be` | FixedFloat / KuCoin staging | High flow linkage; P2 watch; ownership unresolved |
+| `0x0df6ac2e2856114228756947d1b1d9ff63ea3e68` | FixedFloat-route hop | High flow linkage; P2 watch; ownership unresolved |
+| `0x4c73d7e8ef0e61129403e219debc597fd43aa0ec` | Escrow-platform transit | High flow linkage; context-only graph pivot |
+| `0x0361897d757d13a4afad64a2e1bc561b96a8c7cf` | CCE entry hop | High flow linkage; P2 watch; ownership unresolved |
+
+Only the primary wallet inherits Salus's explicit attacker attribution. The five routes do not establish common control or service ownership. June-theft common-actor linkage remains Medium confidence and technique linkage unresolved. See the case for full source provenance and dated route amounts.
+
+<a id="section-bitget--september-2425-cross-chain-breach"></a>
+## Bitget — September 24–25 Cross-Chain Breach
+
+**Case:** [Multi-Chain/Bitget-September-2026/](./Multi-Chain/Bitget-September-2026/). The initial ~$351.6M hot/warm-wallet loss estimate was revised to about $387.5M for the same incident. Backend transaction-data spoofing and fraudulent authorization remain the reported mechanism; initial access is unresolved.
+
+| Ethereum / EVM identifier | Role | Treatment |
+|---|---|---|
+| `0x770b10b273fC44Fe9197D6bF20F145c2e98463Ee` | Primary collection across Ethereum and other EVM networks | High; P1 direct watch |
+| `0xa6dd3f218b65e32ccc37be30f74884133c655545` | Ethereum distribution hub; incident-linked funds | High; P1 direct watch; avoid attributing all historical outflows |
+| `0x469Ac1406dE92f82C0563477240a3627057425DC` | Reported onward dispersal, direct edge unconfirmed independently | Medium path confidence; P2 watch, no attacker-ownership label |
+| `0x600cfedc6bd65fa79b604dc44964f419e45784b2` | September 29 stolen-ETH convergence and payout | High; P1 historical and forward watch |
+| `0xd2c2f029eff5cacc686f24377cfddcfc82d9f899` | Early stolen-ETH holding wallet to move | High; P1 direct watch |
+| `0xfd5ebe912e2061992437767e24e5bcb52a3f9e54` | Active holding and payout at September 29 snapshot | High; P1 direct watch |
+
+Bitget also disclosed P1 primary receiving seeds on XRP Ledger `rwNhefsz1UQEusxhCvHip3RANinWi4CTck`, Zcash `t1WgMdtND8NF7NDUuYmq8MpMj1NTCXkMDVG`, and TRON `TBWNguTTgezw9dVorX441C6nDrZpRxYwKD`. TRM's September 25 actor hypothesis was cautious; Chainalysis explicitly attributed the broader incident to North Korean actors on October 1. That does not establish TraderTraitor custody of every downstream service wallet. No complete downstream BTC or Solana CCTP destinations were ingested.
+
+<a id="section-duelbits--september-24-multi-chain-hot-wallet-compromise"></a>
+## Duelbits — September 24 Multi-Chain Hot-Wallet Compromise
+
+**Case:** [Duelbits September 2026](./Multi-Chain/Duelbits-September-2026/). Approximately $7M project-reported total; roughly $1M Solana tracing component, pending chain-by-chain reconciliation.
+
+| Network | Complete address | Role | Treatment |
+|---|---|---|---|
+| Solana | `A3EBrhMBEGzcPgmbwywSPhW39G6PFGrorU8ib99T6yKw` | Attacker / proceeds destination published by CertiK | High incident linkage; P1 direct watch |
+
+Suspected hot-wallet/private-key compromise remains an assessment without a victim technical postmortem. No Solana protocol vulnerability or named operator is established. Service counterparties remain tracing pivots.
+
+---
+
+<a id="section-malt-swap-function-exploit"></a>
+## MALT Swap-Function Exploit
+
+**Network:** Ethereum<br>
+**Disclosure:** October 3, 2026<br>
+**Confidence:** High<br>
+**Case file:** [`EVM/Ethereum/MALT/`](./EVM/Ethereum/MALT/)
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `0x8F103B6A0aD705bcE6357842A5fefEB49e8D83Ef` | Attacker / exploit seed | P1 direct watch and graph expansion |
+
+The victim `0xF0d3...2AAC` and vulnerable MALT contract `0xfe6C...7A13` are non-attacker context.
+
+---
+
+<a id="section-flashloopadapter-safe-module-exploit"></a>
+## FlashLoopAdapter Safe-Module Exploit
+
+**Network:** Ethereum<br>
+**Incident:** October 1, 2026<br>
+**Confidence:** High<br>
+**Case file:** [`EVM/Ethereum/FlashLoopAdapter/`](./EVM/Ethereum/FlashLoopAdapter/)
+
+| Address | Classification | Monitoring |
+|---|---|---|
+| `0x42c2633438609881c8fBAb82414eb9A0c45F9353` | Attacker EOA / exploit seed | P1 direct watch and graph expansion |
+
+The vulnerable third-party adapter and two affected Safes are non-attacker context. This was not an Aave V3 core compromise.
+
+---
+
+<a id="section-near-intents--returned-funds-historical-iocs"></a>
+## NEAR Intents — Returned-Funds Historical IoCs
+
+**Incident:** October 1, 2026<br>
+**Status update:** Funds returned in full October 2<br>
+**Case file:** [`Multi-Chain/NEAR-Intents-October-2026/`](./Multi-Chain/NEAR-Intents-October-2026/)
+
+| Address | Updated classification | Monitoring |
+|---|---|---|
+| `bc1qjkdzyt845q0vte6sax2nn9j40zdalec3q4zmrc` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+| `bc1qkm5d88p472cg73n7tgw8dpv243v36jjmmnzktz` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+| `bc1q4kddgqsuqmwmzq3qgv0aq2jr9jgdwesx0wljen` | Historical exploit-proceeds wallet; funds returned | P2 historical IoC / graph pivot |
+
+The BTC, EVM, and Solana recovery addresses are excluded from threat labeling. The conflicting largest BTC destination is withheld pending transaction-level reconciliation.
+
+---
+
+<a id="section-tradewiz-sol-pvp--exposed-customer-keys"></a>
+## TradeWiz SOL PVP — Exposed Customer Keys
+
+**Case:** [TradeWiz](./SOL/TradeWiz/). September 30 wallet sweep, approximately $459,468 reconstructed loss. Solana collector `6mmiAPpQmY6YFxecmAyHMi2P8B7CE92Y8E65saE388Hj`, gas wallet `8Fae1SqAWf4isRk7jkZHYdQeiCYLQQMKBbazdnpaHzcY`, and proceeds holder `7iFXCZAg9i54N4vNAEPKBaNB7xQc7SbceEQx75fqMHsc` are direct seeds. `9Jx1rDvCCGLCuyAvuc8MG9bsSE3RdSRajVY85Q54eKCj` forwarded funds toward KuCoin but has unresolved ownership; graph pivot only. Compromised customer accounts remain victims.
+
+<a id="section-frogman--multi-chain-wallet-drain"></a>
+## Frogman — Multi-Chain Wallet Drain
+
+**Case:** [Frogman](./Multi-Chain/Frogman-October-2026/). Solana receiving and liquidation seed `69FnU8vszZSZF6DZCT6VHdsvm3DvvojDgbwqzHJ4cCFS` is P1 for proceeds tracing. The suspected victim `9wMSNoA7TzhwUjqsACVGEvzAxAibCHnsZTgXEAGov8zQ` is explicitly excluded, and the original compromise vector is unknown.
+
+<a id="section-tren-de-aragua--ofac-tron-deposit-identifiers"></a>
+## Tren de Aragua — OFAC TRON Deposit Identifiers
+
+**Case:** [Tren de Aragua ATM network](./TRON/Tren-de-Aragua-ATM/). Seven official September 30 person-address associations are preserved in [addresses.csv](./TRON/Tren-de-Aragua-ATM/addresses.csv). They are exchange-hosted deposit addresses, not a basis for labeling the exchange hot wallet or every transactional neighbor.
+
+<a id="section-bybit--october-laundering-service-leads"></a>
+## Bybit — October Laundering-Service Leads
+
+**Case:** [Bybit laundering investigation](./Multi-Chain/Bybit-Laundering-October-2026/). Directly monitor Solana `9gSwa2Mew9P21Wxs8nFgDujTurKZx1nBEVRv6K5sJP6e`, `EvZJGsDymrSUQyF23HLKEgUpjfd9XN1GTmm8AG6pFS7H`, `8S6T5gL2w5z4M9TCehMgQjxVm3Q6R7WDHp6WFfbtZSAy` and Ethereum `0xbaa551da0ae0c93025d9a983a68025a27dc15337` as laundering-network seeds. Original Bybit theft DPRK attribution does not imply direct DPRK custody of every service wallet; the undercover investigator wallet and Uniswap pool are exclusions.
+
+<a id="section-maker-legacy-auction-keeper-drain"></a>
+## Maker Legacy Auction Keeper Drain
+
+**Case:** [Maker third-party keeper](./EVM/Ethereum/Maker-Legacy-Keeper/). Attacker EOA `0x01EB957E5C7DcDDD60F3C875956cCc6fb9BdA5FA` is P1; `0xEc997d2aD033277913d6002277353368E8321dcF` and `0xf09a13072Ed939B79Bc25B66AA3a836ea6DCC170` are malicious exploit contracts, not proceeds wallets. Victim keeper `0x9c05a05893ada984FC20D0DA0c046De5Cc0e8273` and Maker core contracts are excluded.

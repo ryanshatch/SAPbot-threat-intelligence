@@ -1,0 +1,13 @@
+incident,incident_date,exploit_origin,canonical_case_path,classification,reported_impact,address_dataset
+Raydium Legacy AMM V3,2026-06-10,Solana,SOL/Raydium,counterfeit LP mint validation bypass,approximately 1.34 million USD,SOL/Raydium/addresses.csv
+BonkDAO,2026-07-06,Solana,SOL/BonkDAO,governance takeover and treasury drain,approximately 19.3 to 20 million USD equivalent,case report
+Genesis-Era Solana Whale Drain,2026-07-10 to 2026-07-13,Solana,SOL/Genesis-Whale-Drain,suspected private-wallet compromise and high-value drain with unknown vector,approximately 180900 SOL or 14.2 million USD,SOL/Genesis-Whale-Drain/addresses.csv
+SUNUSI,2026-07-13,Solana,SOL/SUNUSI,malicious burn-tool authorization and Permanent Delegate abuse,more than 275000 USD nominal token value with approximately 94300 USD reportedly realized,SOL/SUNUSI/addresses.csv
+DeFiTuna,2026-07-16,Solana,SOL/DeFiTuna,health-check and solvency-validation exploit,569601 USDC,SOL/DeFiTuna/addresses.csv
+Across Protocol,2026-07-17,Solana,Multi-Chain/Across-Protocol,off-chain event-parser and relayer exploit,reported figures vary by gross payout recovery and net loss,Multi-Chain/Across-Protocol/addresses.csv
+Allbridge Core,2026-07-19,Solana,Multi-Chain/Allbridge-Core,stablecoin-pool account-aliasing and accounting exploit,approximately 1.65 million USD,Multi-Chain/Allbridge-Core/addresses.csv
+FlashTrade,2026-07-21,Solana,SOL/FlashTrade,ephemeral undelegation PDA-validation exploit,98000 USDC fully covered,unresolved
+Rain Legacy Solana Card Contracts,2026-08-28,Solana,SOL/Rain-Legacy-Contracts,shared-infrastructure Ed25519 signature-reuse and authorization-bypass exploit,932804.22 USD reconciled Avici and Tria subset; approximately 1.1 million USD fleet-wide attacker cash-out; Solayer Pay affected with separate loss undisclosed; 8233 core exploit transactions reconstructed,SOL/Rain-Legacy-Contracts/addresses.csv
+Aquifer,2026-08-31,Solana,SOL/Aquifer,forged token-account and untrusted token-program validation exploit,2469729 USD across 212 malicious swaps with 1000.7956 ETH consolidated on Ethereum,SOL/Aquifer/addresses.csv
+Dominion Market / SILV,2026-09-11,Solana,SOL/Dominion-SILV,multisig and standalone-key compromise,46909 SILV; approximately 2.98 million USD nominal before attack and 238000 USD realized,SOL/Dominion-SILV/addresses.csv
+TradeWiz SOL PVP,2026-09-30,Solana,SOL/TradeWiz,product private-key exposure and automated wallet sweep,20933 wallets affected; approximately 459468 USD reconstructed loss,SOL/TradeWiz/addresses.csv

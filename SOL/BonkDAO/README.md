@@ -1,0 +1,209 @@
+<!-- case-visual:start -->
+<p align="center">
+  <img src="../../assets/readme-headers/sol-bonkdao.svg" alt="BonkDAO — Governance takeover and treasury control" width="1200">
+</p>
+<!-- case-visual:end -->
+
+<!-- doc-nav:start -->
+<p><a href="../../readme.md">Home</a> · <a href="../../wallets.md">Wallet index</a> · <a href="../../CATALOG.md">All case files</a> · <a href="../README.md">Parent index</a></p>
+<!-- doc-nav:end -->
+
+<div align="center" style="text-align: center;">
+<h1>BonkDAO Governance Takeover</h1>
+<!-- contents:start -->
+<details>
+<summary>Contents</summary>
+<ul>
+<li><a href="#section-bonkdao-governance-takeover">BonkDAO Governance Takeover</a></li>
+<li><a href="#section-addresses">Addresses</a></li>
+<li><a href="#section-classification">Classification</a></li>
+<li><a href="#section-in-other-words">In other words:</a></li>
+</ul>
+</details>
+<!-- contents:end -->
+
+<a id="section-bonkdao-governance-takeover"></a>
+<h2>BonkDAO Governance Takeover</h2>
+<table>
+  <thead>
+    <tr>
+      <th align="left">Field</th>
+      <th align="left">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Chain</strong></td>
+      <td>Solana</td>
+    </tr>
+    <tr>
+      <td><strong>Incident</strong></td>
+      <td>BonkDAO malicious governance proposal / treasury takeover</td>
+    </tr>
+    <tr>
+      <td><strong>Date published</strong></td>
+      <td>July 10, 2026</td>
+    </tr>
+    <tr>
+      <td><strong>Source type</strong></td>
+      <td>Security incident report with on-chain links; corroborated by BONK, Specter, QuillAudits, and Chainalysis reporting</td>
+    </tr>
+    <tr>
+      <td><strong>Confidence</strong></td>
+      <td>Medium–High</td>
+    </tr>
+    <tr>
+      <td><strong>Estimated loss</strong></td>
+      <td>Approximately 4.426 trillion BONK, valued at around $19.3 million when transferred</td>
+    </tr>
+    <tr>
+      <td><strong>Why it matters</strong></td>
+      <td>
+        The attacker appears to have purchased or borrowed enough BONK to meet quorum, passed a proposal transferring the treasury, and executed it immediately because the DAO had no timelock. This was a governance attack, not a contract exploit or stolen-key event.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a id="section-addresses"></a>
+<h2>Addresses</h2>
+<h3>Proposal Creator — Seed / Governance Address</h3>
+<p>
+  <code>8xxRdtzsw1CJWfEahViqNjZwh5dYJAdSbBctWwcbycVo</code>
+</p>
+<p>
+  Submitted the malicious BIP #76 proposal.
+</p>
+<p>
+  <strong>Recommended use:</strong> Watch directly and use for graph expansion.
+</p>
+<hr>
+<h3>Principal Voting Wallet — Governance Manipulation Address</h3>
+<p>
+  <code>CyEE7oHVDaFJ5xZLbXY3h2Z2uk1VwhTkdy72kPUEtypQ</code>
+</p>
+<p>
+  Cast approximately 99.87% of the successful <strong>YES</strong> vote.
+</p>
+<p>
+  <strong>Recommended use:</strong> Watch directly, particularly for exchange funding and BONK disposal flows.
+</p>
+<hr>
+<h3>Secondary Voting Wallet — Graph-Expansion Pivot</h3>
+<p>
+  <code>FQnQYaYe1UiQZiokdDH39ybRbhJYfzzwXSghnA32pWxc</code>
+</p>
+<p>
+  Cast a much smaller <strong>YES</strong> vote.
+</p>
+<p>
+  <strong>Recommended use:</strong> Use mainly as a relationship and funding pivot unless additional attribution emerges.
+</p>
+<hr>
+<h3>Initial Treasury Recipient — Attacker Wallet</h3>
+<p>
+  <code>9bxWkNf3BtJ6iehq9KbX9uCWMjem4TFiPZ19T2sYJHvQ</code>
+</p>
+<p>
+  Received the BonkDAO treasury directly after the vote. Solscan reportedly labels the wallet as funded by Bybit.
+</p>
+<p>
+  <strong>Recommended use:</strong> Highest-priority direct-watch address.
+</p>
+<hr>
+<h3>Subsequent Destination — Consolidation / Custody Wallet</h3>
+<p>
+  <code>EXaJnmrLf7RAKLfn1hehoKX94keKYmvZm5H5zuYVeh42</code>
+</p>
+<p>
+  Received the treasury balance roughly ten hours later. Reporting describes the destination as part of a three-key multisig called <strong>BONK 2.0</strong>.
+</p>
+<p>
+  <strong>Recommended use:</strong> Watch directly and use as the primary downstream graph-expansion seed.
+</p>
+<blockquote>
+  This address should not yet be described as a separate attacker without stronger evidence.
+</blockquote>
+<hr>
+<h3>Drained Treasury — Source Address</h3>
+<p>
+  <code>F8FqZuUKfoy58aHLW6bfeEhfW9sTtJyqFTqnxVmGZ6dU</code>
+</p>
+<p>
+  This is the victim treasury, not an attacker wallet.
+</p>
+<p>
+  <strong>Recommended use:</strong> Use only to identify the original transfer and related governance activity.
+</p>
+<a id="section-classification"></a>
+<h2>Classification</h2>
+<ul>
+  <li>
+    <strong>Direct-watch priority</strong>
+    <ul>
+      <li><code>9bxWkNf3BtJ6iehq9KbX9uCWMjem4TFiPZ19T2sYJHvQ</code></li>
+      <li><code>EXaJnmrLf7RAKLfn1hehoKX94keKYmvZm5H5zuYVeh42</code></li>
+      <li><code>CyEE7oHVDaFJ5xZLbXY3h2Z2uk1VwhTkdy72kPUEtypQ</code></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Graph-expansion pivots</strong>
+    <ul>
+      <li>Proposal creator</li>
+      <li>Secondary voting wallet</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Do not threat-label</strong>
+    <ul>
+      <li>BonkDAO treasury address</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Current attribution</strong>
+    <ul>
+      <li>Malicious BonkDAO governance participants</li>
+      <li>No publicly confirmed individual identity or criminal charge</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Material unknown</strong>
+    <ul>
+      <li>
+        Whether the proposal creator, voting wallets, and treasury recipients were controlled by one actor or by coordinated actors remains unproven.
+      </li>
+    </ul>
+  </li>
+</ul><hr>
+<a id="section-in-other-words"></a>
+<h2>In other words:</h2>
+<p>
+BonkDAO was drained for roughly $20 million, but this was not a smart contract exploit.
+
+The attacker simply bought around $4 million worth of BONK, gained enough voting power, and pushed a malicious proposal through the DAO’s normal governance process.
+
+That is what makes this attack so important:
+
+The protocol did not break.
+
+It worked exactly as designed.
+
+The problem was that BonkDAO allowed token ownership to translate directly into control without enough safeguards to stop one newly accumulated position from authorizing a massive treasury transfer.
+
+After the theft, BonkDAO contacted law enforcement and began coordinating with exchanges to trace and freeze the funds. Upbit also suspended related deposits and withdrawals.
+
+BONK dropped moderately, while the broader Solana market remained relatively stable.
+
+TLDR:
+
+The attacker did not hack the code.
+
+They bought the vote.
+
+BonkDAO’s governance system allowed someone with enough money to temporarily purchase control of the treasury and approve a legitimate transaction for an illegitimate purpose.
+
+This is why DAOs need more than token-weighted voting.
+
+Large treasury proposals should require time locks, meaningful quorum thresholds, withdrawal limits, emergency veto powers, and monitoring for sudden token accumulation.
+
+Decentralized governance is not secure when control can simply be rented by the highest bidder.
+</p>
