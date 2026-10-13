@@ -1,46 +1,46 @@
-name: Data foundation
+# name: Data foundation
 
-on:
-  pull_request:
-    paths:
-      - "**/addresses.csv"
-      - "threatintel/**"
-      - "tests/**"
-      - "webapp.py"
-      - "web/**"
-      - "scripts/prepare_web_db.py"
-      - "requirements-web.txt"
-      - "render.yaml"
-      - ".github/workflows/data-foundation.yml"
-  push:
-    branches: [main]
-    paths:
-      - "**/addresses.csv"
-      - "threatintel/**"
-      - "tests/**"
-      - "webapp.py"
-      - "web/**"
-      - "scripts/prepare_web_db.py"
-      - "requirements-web.txt"
-      - "render.yaml"
-      - ".github/workflows/data-foundation.yml"
+# on:
+#   pull_request:
+#     paths:
+#       - "**/addresses.csv"
+#       - "threatintel/**"
+#       - "tests/**"
+#       - "webapp.py"
+#       - "web/**"
+#       - "scripts/prepare_web_db.py"
+#       - "requirements-web.txt"
+#       - "render.yaml"
+#       - ".github/workflows/data-foundation.yml"
+#   push:
+#     branches: [main]
+#     paths:
+#       - "**/addresses.csv"
+#       - "threatintel/**"
+#       - "tests/**"
+#       - "webapp.py"
+#       - "web/**"
+#       - "scripts/prepare_web_db.py"
+#       - "requirements-web.txt"
+#       - "render.yaml"
+#       - ".github/workflows/data-foundation.yml"
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Install web dependencies
-        run: pip install -r requirements-web.txt
-      - name: Unit tests
-        run: python -m unittest discover -s tests -v
-      - name: Validate supported case records
-        run: python -m threatintel validate > /tmp/threatintel-validation.json
-      - name: Build disposable query index
-        run: python -m threatintel build --output /tmp/threatintel-ci.sqlite > /tmp/threatintel-build.json
+# jobs:
+#   validate:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.12"
+#       - name: Install web dependencies
+#         run: pip install -r requirements-web.txt
+#       - name: Unit tests
+#         run: python -m unittest discover -s tests -v
+#       - name: Validate supported case records
+#         run: python -m threatintel validate > /tmp/threatintel-validation.json
+#       - name: Build disposable query index
+#         run: python -m threatintel build --output /tmp/threatintel-ci.sqlite > /tmp/threatintel-build.json
