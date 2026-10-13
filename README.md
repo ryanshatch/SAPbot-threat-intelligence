@@ -17,10 +17,11 @@ Browse the [complete public case catalog](CATALOG.md) or start with:
 | [Solana](SOL/README.md) | Protocol incidents, compromised wallets, and campaigns |
 | [TRON](TRON/README.md) | Sanctions and threat-finance records |
 | [Multi-chain](Multi-Chain/README.md) | Cross-chain incidents and security sweeps |
+| [1VPNS](1VPNS/README.md) | OFAC designation and multi-network addresses |
 | [FTX](FTX/readme.md) | Historical wallet snapshot |
 | [Lazarus](Lazarus/readme.md) | DPRK wallet research |
 
-The [wallet index](wallets.md) is a historical research document. A referenced case may be absent from this curated public edition; the [catalog](CATALOG.md) lists only published case files.
+The [wallet index](wallets.md) is a historical research document. Some referenced cases may be absent from this curated public edition; the [catalog](CATALOG.md) lists only published case files.
 
 ## How to read the evidence
 

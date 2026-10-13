@@ -356,7 +356,7 @@ The reviewed on-chain analysis supports malicious authorization abuse rather tha
 **Networks:** Bitcoin, Ethereum, Solana, Litecoin, Zcash, Dash, TRON, Dogecoin  
 **Source type:** Official OFAC SDN List update  
 **Confidence:** High  
-**Case file:** Not published in this repository. Verify these historical indicators against the current official designation before use.
+**Case file:** [`1VPNS/`](./1VPNS/README.md). Verify the current designation against [OFAC's July 13, 2026 listing](https://ofac.treasury.gov/recent-actions/20260713) before use.
 
 ### BTC / ETH / SOL Direct Sanctions-Watch Seeds
 
